@@ -1,10 +1,9 @@
 import { useEffect } from 'react';
 import Navigation from '@/components/Navigation';
 import HeroSection from '@/components/HeroSection';
-import PlatformSection from '@/components/PlatformSection';
-import TierBlocks from '@/components/TierBlocks';
-import PerformanceSection from '@/components/PerformanceSection';
-import AccessFlow from '@/components/AccessFlow';
+import TierOverview from '@/components/TierOverview';
+import TrustAnchor from '@/components/TrustAnchor';
+import SimplifiedCTA from '@/components/SimplifiedCTA';
 import EmotionalAnchor from '@/components/EmotionalAnchor';
 import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
@@ -36,10 +35,9 @@ const Index = () => {
     <div className="min-h-screen bg-background">
       <Navigation />
       <HeroSection />
-      <PlatformSection />
-      <TierBlocks />
-      <PerformanceSection />
-      <AccessFlow />
+      <TierOverview />
+      <TrustAnchor />
+      <SimplifiedCTA />
       <EmotionalAnchor />
       <FinalCTA />
       <Footer />

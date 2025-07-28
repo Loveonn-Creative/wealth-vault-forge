@@ -1,9 +1,11 @@
 import { useState, useEffect } from 'react';
 import { Menu, X } from 'lucide-react';
+import { Link, useLocation } from 'react-router-dom';
 
 const Navigation = () => {
   const [isScrolled, setIsScrolled] = useState(false);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+  const location = useLocation();
 
   useEffect(() => {
     const handleScroll = () => {
@@ -14,45 +16,50 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { label: 'Platform', href: '#platform' },
-    { label: 'Tiers', href: '#tiers' },
-    { label: 'Performance', href: '#performance' },
-    { label: 'Access', href: '#access' }
+    { label: 'Investment Tiers', href: '/tiers' },
+    { label: 'The Architecture', href: '/architecture' },
+    { label: 'Research', href: '/research' },
+    { label: 'Insights', href: '/insights' }
   ];
 
   return (
     <nav className={`fixed top-0 w-full z-50 transition-all duration-500 ${
       isScrolled 
-        ? 'bg-background/80 backdrop-blur-md border-b border-border/50' 
+        ? 'bg-background/95 backdrop-blur-md border-b border-border/50' 
         : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
           {/* Logo */}
-          <div className="flex-shrink-0">
-            <div className="text-2xl font-bold text-primary tracking-tight">
+          <Link to="/" className="flex-shrink-0">
+            <div className="text-2xl font-bold text-primary tracking-tight hover:text-emerald transition-colors duration-300">
               Wealth Blocks
             </div>
-          </div>
+          </Link>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-12">
             {navItems.map((item) => (
-              <a
+              <Link
                 key={item.label}
-                href={item.href}
-                className="text-muted-foreground hover:text-primary transition-colors duration-300 font-medium"
+                to={item.href}
+                className={`text-muted-foreground hover:text-primary transition-colors duration-300 font-medium ${
+                  location.pathname === item.href ? 'text-primary' : ''
+                }`}
               >
                 {item.label}
-              </a>
+              </Link>
             ))}
           </div>
 
           {/* Desktop CTA */}
           <div className="hidden md:flex items-center space-x-4">
-            <button className="px-6 py-2 text-primary hover:text-emerald transition-colors duration-300">
-              Access Request
-            </button>
+            <Link 
+              to="/access"
+              className="px-6 py-2 text-primary hover:text-emerald transition-colors duration-300 font-semibold"
+            >
+              Apply for Access
+            </Link>
           </div>
 
           {/* Mobile menu button */}
@@ -71,19 +78,23 @@ const Navigation = () => {
           <div className="md:hidden">
             <div className="px-2 pt-2 pb-6 space-y-4 bg-background/95 backdrop-blur-md border-t border-border/50">
               {navItems.map((item) => (
-                <a
+                <Link
                   key={item.label}
-                  href={item.href}
+                  to={item.href}
                   className="block px-4 py-2 text-muted-foreground hover:text-primary transition-colors duration-300"
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {item.label}
-                </a>
+                </Link>
               ))}
               <div className="px-4 pt-4">
-                <button className="w-full py-3 text-primary hover:text-emerald transition-colors duration-300 border border-border rounded-lg">
-                  Access Request
-                </button>
+                <Link 
+                  to="/access"
+                  className="block w-full py-3 text-center text-primary hover:text-emerald transition-colors duration-300 border border-border rounded-lg"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  Apply for Access
+                </Link>
               </div>
             </div>
           </div>
