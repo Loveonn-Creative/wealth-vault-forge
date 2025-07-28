@@ -176,7 +176,7 @@
 
   .tier-block {
     @apply exclusive-card wealth-hover;
-    @apply p-8 cursor-pointer group;
+    @apply p-8 cursor-pointer;
     @apply transition-all duration-700 ease-out;
   }
 

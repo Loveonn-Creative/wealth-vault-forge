@@ -69,7 +69,7 @@ const TierBlocks = () => {
           {tiers.map((tier, index) => (
             <div 
               key={tier.name} 
-              className={`tier-block reveal-up reveal-stagger-${index + 1} ${
+              className={`tier-block group reveal-up reveal-stagger-${index + 1} ${
                 tier.featured ? 'ring-2 ring-emerald/20 relative' : ''
               }`}
             >
