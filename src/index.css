@@ -2,41 +2,74 @@
 @tailwind components;
 @tailwind utilities;
 
-/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
-All colors MUST be HSL.
-*/
+/* Wealth Blocks Design System - Premium Private Capital Platform */
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 222.2 84% 4.9%;
+    /* Premium color palette - off-white, steel, muted emerald, shadow black */
+    --background: 0 0% 98%;
+    --foreground: 0 0% 8%;
 
-    --card: 0 0% 100%;
-    --card-foreground: 222.2 84% 4.9%;
+    --card: 0 0% 99%;
+    --card-foreground: 0 0% 8%;
 
-    --popover: 0 0% 100%;
-    --popover-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 99%;
+    --popover-foreground: 0 0% 8%;
 
-    --primary: 222.2 47.4% 11.2%;
-    --primary-foreground: 210 40% 98%;
+    /* Primary: Shadow black for authority */
+    --primary: 0 0% 8%;
+    --primary-foreground: 0 0% 98%;
 
-    --secondary: 210 40% 96.1%;
-    --secondary-foreground: 222.2 47.4% 11.2%;
+    /* Secondary: Steel gray for sophistication */
+    --secondary: 210 8% 92%;
+    --secondary-foreground: 0 0% 8%;
 
-    --muted: 210 40% 96.1%;
-    --muted-foreground: 215.4 16.3% 46.9%;
+    /* Muted: Refined steel tones */
+    --muted: 210 12% 95%;
+    --muted-foreground: 210 8% 45%;
 
-    --accent: 210 40% 96.1%;
-    --accent-foreground: 222.2 47.4% 11.2%;
+    /* Accent: Muted emerald for wealth indicators */
+    --accent: 160 20% 88%;
+    --accent-foreground: 160 40% 25%;
+
+    /* Emerald wealth indicators */
+    --emerald: 160 40% 35%;
+    --emerald-foreground: 0 0% 98%;
+    --emerald-muted: 160 20% 88%;
+
+    /* Steel tones for exclusivity */
+    --steel: 210 15% 75%;
+    --steel-dark: 210 20% 25%;
+    --steel-light: 210 12% 90%;
 
     --destructive: 0 84.2% 60.2%;
     --destructive-foreground: 210 40% 98%;
 
-    --border: 214.3 31.8% 91.4%;
-    --input: 214.3 31.8% 91.4%;
-    --ring: 222.2 84% 4.9%;
+    --border: 210 12% 90%;
+    --input: 210 12% 95%;
+    --ring: 160 40% 35%;
 
-    --radius: 0.5rem;
+    --radius: 0.75rem;
+
+    /* Premium gradients */
+    --gradient-wealth: linear-gradient(135deg, hsl(var(--emerald)) 0%, hsl(var(--steel-dark)) 100%);
+    --gradient-subtle: linear-gradient(180deg, hsl(var(--background)) 0%, hsl(var(--muted)) 100%);
+    --gradient-elevation: linear-gradient(135deg, hsl(var(--card)) 0%, hsl(var(--steel-light)) 100%);
+
+    /* Exclusive shadows */
+    --shadow-elevation: 0 10px 40px -10px hsl(var(--steel-dark) / 0.1);
+    --shadow-wealth: 0 0 50px hsl(var(--emerald) / 0.1);
+    --shadow-exclusive: 0 25px 60px -15px hsl(var(--primary) / 0.08);
+
+    /* Typography scale for hierarchy */
+    --font-size-hero: 4.5rem;
+    --font-size-title: 2.5rem;
+    --font-size-subtitle: 1.25rem;
+
+    /* Spacing for intentional white space */
+    --space-exclusive: 8rem;
+    --space-premium: 6rem;
+    --space-refined: 4rem;
 
     --sidebar-background: 0 0% 98%;
 
@@ -100,6 +133,104 @@ All colors MUST be HSL.
   }
 
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground font-sans;
+    font-feature-settings: "kern" 1, "liga" 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  /* Premium typography classes */
+  .text-hero {
+    font-size: var(--font-size-hero);
+    line-height: 1.1;
+    letter-spacing: -0.02em;
+  }
+
+  .text-title {
+    font-size: var(--font-size-title);
+    line-height: 1.2;
+    letter-spacing: -0.01em;
+  }
+
+  .text-subtitle {
+    font-size: var(--font-size-subtitle);
+    line-height: 1.4;
+  }
+}
+
+@layer components {
+  /* Wealth interaction effects */
+  .wealth-hover {
+    @apply transition-all duration-500 ease-out;
+    @apply hover:shadow-[var(--shadow-wealth)];
+    @apply hover:-translate-y-1;
+  }
+
+  .exclusive-card {
+    @apply bg-gradient-to-br from-card to-steel-light/20;
+    @apply backdrop-blur-sm border border-border/50;
+    @apply shadow-[var(--shadow-elevation)];
+    @apply rounded-[var(--radius)];
+  }
+
+  .tier-block {
+    @apply exclusive-card wealth-hover;
+    @apply p-8 cursor-pointer group;
+    @apply transition-all duration-700 ease-out;
+  }
+
+  .tier-block:hover {
+    @apply shadow-[var(--shadow-exclusive)];
+    @apply border-emerald/30;
+  }
+
+  /* Scroll reveal animations */
+  .reveal-up {
+    @apply opacity-0 translate-y-8;
+    animation: reveal-up 0.8s ease-out forwards;
+  }
+
+  .reveal-fade {
+    @apply opacity-0;
+    animation: reveal-fade 0.6s ease-out forwards;
+  }
+
+  /* Staggered animations */
+  .reveal-stagger-1 { animation-delay: 0.1s; }
+  .reveal-stagger-2 { animation-delay: 0.2s; }
+  .reveal-stagger-3 { animation-delay: 0.3s; }
+}
+
+@layer utilities {
+  /* Custom spacing utilities */
+  .space-exclusive { @apply py-32; }
+  .space-premium { @apply py-24; }
+  .space-refined { @apply py-16; }
+
+  /* Gradient utilities */
+  .bg-wealth { background: var(--gradient-wealth); }
+  .bg-subtle { background: var(--gradient-subtle); }
+  .bg-elevation { background: var(--gradient-elevation); }
+}
+
+/* Keyframe animations */
+@keyframes reveal-up {
+  from {
+    opacity: 0;
+    transform: translateY(32px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes reveal-fade {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
   }
 }
