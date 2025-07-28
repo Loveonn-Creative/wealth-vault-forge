@@ -41,13 +41,15 @@ const PlatformSection = () => {
           </div>
           <div className="reveal-up">
             <h2 className="text-title font-bold text-primary">
-              Silent wealth engine
+              What if wealth was engineered in silence?
             </h2>
           </div>
           <div className="reveal-up reveal-stagger-1 max-w-3xl mx-auto">
             <p className="text-subtitle text-muted-foreground leading-relaxed">
-              Our proprietary AI infrastructure processes vast amounts of market data, 
-              identifying patterns invisible to traditional analysis and executing with precision.
+              Wealth Blocks is India's most advanced AI-powered private capital platform.<br />
+              No noise. No hype. Just access to powerful non-market instruments that deliver consistent returns.<br /><br />
+              We help a new class of wealth-builders move beyond traditional equity or FD—with verified opportunities once reserved for institutions, now open to the quietly ambitious.<br /><br />
+              Built by financial scientists. Protected by compliance. Designed for performance.
             </p>
           </div>
         </div>

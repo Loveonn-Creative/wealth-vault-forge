@@ -7,8 +7,8 @@ const AccessFlow = () => {
   const steps = [
     {
       icon: Shield,
-      title: 'Eligibility Verification',
-      description: 'Initial screening and capital verification',
+      title: 'Submit Access Request',
+      description: 'Initial application for platform access and investment eligibility',
       details: [
         'Net worth assessment',
         'Investment experience validation',
@@ -18,7 +18,7 @@ const AccessFlow = () => {
     },
     {
       icon: FileText,
-      title: 'KYC Documentation',
+      title: 'KYC Verification (PAN, GSTN, UBO)',
       description: 'Comprehensive identity and financial verification',
       details: [
         'PAN & GSTN verification',
@@ -29,24 +29,35 @@ const AccessFlow = () => {
     },
     {
       icon: Lock,
-      title: 'Security Clearance',
-      description: 'Advanced security and compliance protocols',
+      title: 'Get Personalised Wealth Block Plan',
+      description: 'Custom investment strategy based on your risk profile and objectives',
       details: [
-        'Biometric authentication setup',
-        'Multi-factor security configuration',
-        'Compliance agreement execution',
-        'Privacy protocol acknowledgment'
+        'Risk tolerance assessment',
+        'Investment objective alignment',
+        'Personalized portfolio design',
+        'Strategy presentation'
       ]
     },
     {
       icon: CreditCard,
-      title: 'Capital Deployment',
-      description: 'Secure fund transfer and portfolio activation',
+      title: 'Review + Transfer Capital',
+      description: 'Final review and secure capital transfer to selected opportunities',
       details: [
-        'Escrow account setup',
-        'Investment mandate execution',
-        'Portfolio allocation confirmation',
-        'Real-time monitoring activation'
+        'Strategy review meeting',
+        'Legal documentation',
+        'Secure capital transfer',
+        'Investment confirmation'
+      ]
+    },
+    {
+      icon: CheckCircle,
+      title: 'Track Performance via Dashboard',
+      description: 'Continuous monitoring through advanced performance dashboard',
+      details: [
+        'Real-time performance tracking',
+        'Risk-adjusted return analysis',
+        'Portfolio optimization',
+        'Quarterly reviews'
       ]
     }
   ];
@@ -63,13 +74,12 @@ const AccessFlow = () => {
           </div>
           <div className="reveal-up">
             <h2 className="text-title font-bold text-primary">
-              Defense-level onboarding
+              Engineered Access. Not Everyone Gets In.
             </h2>
           </div>
           <div className="reveal-up reveal-stagger-1 max-w-2xl mx-auto">
             <p className="text-muted-foreground leading-relaxed">
-              Our multi-layered verification process ensures that only qualified investors 
-              gain access to our private capital opportunities.
+              Every investor is mapped to risk-grade funds. No public offers. Zero ad-based onboarding.
             </p>
           </div>
         </div>

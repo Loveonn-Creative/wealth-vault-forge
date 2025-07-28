@@ -9,14 +9,17 @@ const Footer = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {/* Brand */}
           <div className="space-y-4">
-            <div className="text-2xl font-bold">Wealth Blocks</div>
+            <div className="text-2xl font-bold">Wealth Blocks™</div>
             <p className="text-primary-foreground/70 text-sm leading-relaxed">
-              AI-powered private capital investment platform engineered for exceptional returns.
+              Private Capital Engineered for the Select Few
             </p>
             <div className="flex items-center gap-2 text-emerald-muted">
               <Shield size={16} />
-              <span className="text-xs">SEBI Registered • RIA Licensed</span>
+              <span className="text-xs">SEBI & RBI-compliant instruments only</span>
             </div>
+            <p className="text-primary-foreground/70 text-xs">
+              support@wealthblocks.in
+            </p>
           </div>
 
           {/* Platform */}

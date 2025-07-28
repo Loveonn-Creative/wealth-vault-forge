@@ -5,8 +5,8 @@ const TierBlocks = () => {
     {
       name: 'Foundation',
       icon: Lock,
-      description: 'Selective entry point for verified capital deployment',
-      minimumInvestment: '₹50L+',
+      description: 'For those starting their wealth journey. Stable, vetted, entry-level private market blocks.',
+      minimumInvestment: '₹1L+',
       features: [
         'AI-driven market intelligence',
         'Curated opportunity pipeline',
@@ -14,13 +14,13 @@ const TierBlocks = () => {
         'Quarterly performance reviews'
       ],
       exclusivity: 'Limited to 100 members',
-      returns: '18-22% Target IRR'
+      returns: '8%+ ROI'
     },
     {
       name: 'Momentum',
       icon: TrendingUp,
-      description: 'Accelerated wealth engineering for committed capital',
-      minimumInvestment: '₹2Cr+',
+      description: 'For mid-stage investors ready to accelerate with structured private assets.',
+      minimumInvestment: '₹10L+',
       features: [
         'Advanced algorithmic strategies',
         'Direct private market access',
@@ -28,14 +28,14 @@ const TierBlocks = () => {
         'Dedicated relationship management'
       ],
       exclusivity: 'By invitation only',
-      returns: '24-28% Target IRR',
+      returns: '12–18% ROI',
       featured: true
     },
     {
       name: 'Legacy',
       icon: Crown,
-      description: 'Institutional-grade infrastructure for generational wealth',
-      minimumInvestment: '₹10Cr+',
+      description: 'For elite capital looking for high-growth private equity, curated venture debt, and exclusive funds.',
+      minimumInvestment: '₹50L+',
       features: [
         'Bespoke investment architecture',
         'Direct co-investment opportunities',
@@ -43,7 +43,7 @@ const TierBlocks = () => {
         'Global market orchestration'
       ],
       exclusivity: 'Ultra-selective access',
-      returns: '30%+ Target IRR'
+      returns: '15–23% ROI'
     }
   ];
 
@@ -59,7 +59,7 @@ const TierBlocks = () => {
           </div>
           <div className="reveal-up">
             <h2 className="text-title font-bold text-primary">
-              Engineered for exceptional access
+              Three Tiers. One Engine.
             </h2>
           </div>
         </div>

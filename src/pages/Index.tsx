@@ -5,6 +5,8 @@ import PlatformSection from '@/components/PlatformSection';
 import TierBlocks from '@/components/TierBlocks';
 import PerformanceSection from '@/components/PerformanceSection';
 import AccessFlow from '@/components/AccessFlow';
+import EmotionalAnchor from '@/components/EmotionalAnchor';
+import FinalCTA from '@/components/FinalCTA';
 import Footer from '@/components/Footer';
 
 const Index = () => {
@@ -38,6 +40,8 @@ const Index = () => {
       <TierBlocks />
       <PerformanceSection />
       <AccessFlow />
+      <EmotionalAnchor />
+      <FinalCTA />
       <Footer />
     </div>
   );

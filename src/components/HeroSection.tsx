@@ -22,10 +22,10 @@ const HeroSection = () => {
           {/* Main headline */}
           <div className="reveal-up reveal-stagger-1">
             <h1 className="text-hero font-bold text-primary leading-none tracking-tight">
-              Intelligence meets
+              Wealth Blocks™
               <br />
               <span className="bg-gradient-to-r from-emerald to-steel-dark bg-clip-text text-transparent">
-                intentional wealth
+                Private Capital Growth for Discerning Investors
               </span>
             </h1>
           </div>
@@ -33,24 +33,23 @@ const HeroSection = () => {
           {/* Poetic positioning */}
           <div className="reveal-up reveal-stagger-2 max-w-2xl mx-auto">
             <p className="text-subtitle text-muted-foreground leading-relaxed">
-              An AI-powered private capital platform engineered for those who understand 
-              that exceptional returns require exceptional access. Not for everyone.
+              This is not mass-market investing.<br />
+              This is private access to 8–23% ROI vehicles—<br />
+              curated, verified, and AI-backed.
             </p>
           </div>
 
           {/* Subtle engagement */}
           <div className="reveal-up reveal-stagger-3 pt-8">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <button className="group px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-emerald transition-all duration-500 wealth-hover">
+              <a 
+                href="#access"
+                className="group px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-emerald transition-all duration-500 wealth-hover"
+              >
                 <span className="flex items-center gap-2">
-                  Explore Intelligence
-                  <ArrowRight size={16} className="group-hover:translate-x-1 transition-transform duration-300" />
+                  ⟶ Apply for Access (Limited Invites)
                 </span>
-              </button>
-              
-              <button className="px-8 py-4 text-muted-foreground hover:text-primary transition-colors duration-300 underline decoration-emerald/30 hover:decoration-emerald underline-offset-4">
-                Performance Overview
-              </button>
+              </a>
             </div>
           </div>
         </div>
