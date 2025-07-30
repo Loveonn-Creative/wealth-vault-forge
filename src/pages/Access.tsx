@@ -28,6 +28,8 @@ const Access = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
+    // In a real implementation, this would send data to a backend
+    console.log('Form submitted:', formData);
     setIsSubmitted(true);
   };
 
@@ -38,7 +40,7 @@ const Access = () => {
   };
 
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background dark">
       <Navigation />
       
       <main className="pt-20">
@@ -370,12 +372,15 @@ const Access = () => {
               <div className="max-w-2xl mx-auto text-center">
                 <div className="exclusive-card p-12">
                   <CheckCircle className="text-emerald mx-auto mb-6" size={64} />
-                  <h3 className="text-2xl font-bold text-emerald mb-4">Application Submitted</h3>
+                  <h3 className="text-2xl font-bold text-emerald mb-4">You're in the queue.</h3>
                   <p className="text-lg text-muted-foreground mb-6">
-                    Your application has been encrypted and submitted. Our team will review your profile within 48 hours.
+                    We'll reach out post verification with access credentials and capital deck preview.
                   </p>
-                  <p className="text-sm text-muted-foreground">
-                    If approved, you'll receive a secure link to proceed with KYC verification and fund allocation.
+                  <div className="live-indicator mb-6">
+                    AI verification engine active
+                  </div>
+                  <p className="text-emerald font-semibold text-lg">
+                    Stay sharp.
                   </p>
                 </div>
               </div>

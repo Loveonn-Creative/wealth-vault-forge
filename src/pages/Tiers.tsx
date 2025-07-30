@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 
 const Tiers = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-background dark">
       <Navigation />
       
       <main className="pt-20">
