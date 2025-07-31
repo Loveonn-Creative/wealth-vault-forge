@@ -30,82 +30,104 @@ const Index = () => {
     <div className="min-h-screen bg-background dark">
       <Navigation />
       
-      {/* Hero Section */}
+      {/* Hero Section - Instant Impact Design */}
       <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-        {/* AI Background Pattern */}
-        <div className="absolute inset-0 opacity-[0.03]">
+        {/* Dynamic Background Pattern */}
+        <div className="absolute inset-0 opacity-[0.08]">
           <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald blur-3xl animate-pulse"></div>
           <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-steel blur-3xl animate-pulse"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-2 h-2 bg-emerald rounded-full animate-ping"></div>
+          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-emerald rounded-full animate-ping"></div>
         </div>
 
-        {/* AI Data Flow Lines */}
+        {/* Real-time Data Flow Animation */}
         <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/20 to-transparent animate-pulse"></div>
-          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/10 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/30 to-transparent animate-pulse"></div>
+          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/20 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+          <div className="absolute bottom-1/3 right-0 w-full h-px bg-gradient-to-l from-transparent via-steel/20 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
         </div>
 
         <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center space-premium">
-          {/* Live AI Indicator */}
-          <div className="reveal-fade mb-8">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium">
-              <div className="w-2 h-2 bg-emerald rounded-full animate-pulse"></div>
-              AI Capital Engine Live
+          {/* Ultra-Prominent Live Status */}
+          <div className="reveal-fade mb-12">
+            <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald/15 border border-emerald/30 rounded-full text-emerald text-base font-bold backdrop-blur-sm">
+              <div className="w-3 h-3 bg-emerald rounded-full animate-pulse shadow-emerald shadow-lg"></div>
+              AI CAPITAL ENGINE LIVE • ₹847CR UNDER MANAGEMENT
             </div>
           </div>
 
-          {/* Hero Content */}
-          <div className="space-y-8">
-            {/* Subtle intro */}
-            <div className="reveal-fade">
-              <p className="text-emerald/60 font-medium tracking-wider uppercase text-sm">
-                Private Capital Engineering
-              </p>
-            </div>
-
-            {/* Main headline */}
+          {/* Hero Content - Immediate Impact */}
+          <div className="space-y-10">
+            {/* Power Opening */}
             <div className="reveal-up reveal-stagger-1">
-              <h1 className="text-hero font-bold text-white leading-none tracking-tight">
-                Wealth Blocks™
+              <h1 className="text-6xl lg:text-8xl font-black text-white leading-none tracking-tight mb-6">
+                WEALTH
                 <br />
-                <span className="bg-gradient-to-r from-emerald to-steel-light bg-clip-text text-transparent">
-                  Where Capital Finds Its Intelligence
+                <span className="bg-gradient-to-r from-emerald via-emerald-light to-steel-light bg-clip-text text-transparent">
+                  BLOCKS™
                 </span>
               </h1>
+              <div className="text-2xl lg:text-3xl text-emerald font-bold tracking-wide">
+                PRIVATE CAPITAL • ENGINEERED RETURNS • AI-OPTIMIZED
+              </div>
             </div>
 
-            {/* Positioning */}
-            <div className="reveal-up reveal-stagger-2 max-w-2xl mx-auto">
-              <p className="text-subtitle text-gray-300 leading-relaxed mb-4">
-                You didn't build wealth by accident. You earned it. Preserved it. Followed every rule.
+            {/* Hook - First 3 Second Impact */}
+            <div className="reveal-up reveal-stagger-2 max-w-3xl mx-auto">
+              <p className="text-2xl lg:text-3xl text-white font-semibold leading-tight mb-6">
+                STOP LOSING TO INFLATION
               </p>
-              <p className="text-lg text-gray-400 leading-relaxed">
-                Yet here you are—staring at returns that barely keep pace with inflation, while a select few multiply their capital without noise, without risk, without your access.
+              <p className="text-xl text-gray-300 leading-relaxed mb-4">
+                While you earn 6% in FDs, the select few compound at 15-23% in private capital markets.
+              </p>
+              <p className="text-lg text-emerald font-medium">
+                This is your invitation to cross over.
               </p>
             </div>
 
-            {/* CTA */}
-            <div className="reveal-up reveal-stagger-3 pt-8">
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
+            {/* Immediate Action CTA */}
+            <div className="reveal-up reveal-stagger-3 pt-4">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
                 <a 
                   href="/access"
-                  className="group px-8 py-4 bg-emerald text-black rounded-lg hover:bg-emerald/90 transition-all duration-500 wealth-hover font-semibold"
+                  className="group px-12 py-6 bg-emerald text-black rounded-xl hover:bg-emerald/90 transition-all duration-300 wealth-hover font-black text-xl shadow-emerald/50 shadow-2xl"
                 >
-                  <span className="flex items-center gap-2">
-                    <Zap className="w-5 h-5" />
-                    Apply for Access (Limited Invites)
+                  <span className="flex items-center gap-3">
+                    <Zap className="w-6 h-6" />
+                    APPLY NOW • LIMITED ACCESS
                   </span>
                 </a>
+                <div className="text-sm text-gray-400 text-center">
+                  <div className="font-medium">97% rejection rate</div>
+                  <div>Private capital requires verification</div>
+                </div>
+              </div>
+            </div>
+
+            {/* Live Performance Ticker */}
+            <div className="reveal-up reveal-stagger-4 pt-8">
+              <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-emerald">15-23%</div>
+                  <div className="text-sm text-gray-400">Annual Returns</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-emerald">₹15K</div>
+                  <div className="text-sm text-gray-400">Min Investment</div>
+                </div>
+                <div className="text-center">
+                  <div className="text-2xl font-bold text-emerald">24M</div>
+                  <div className="text-sm text-gray-400">Liquidity Window</div>
+                </div>
               </div>
             </div>
           </div>
         </div>
 
-        {/* Scroll indicator */}
-        <div className="absolute bottom-12 left-1/2 transform -translate-x-1/2 reveal-fade">
-          <div className="flex flex-col items-center space-y-2 text-emerald/60">
-            <div className="w-px h-12 bg-gradient-to-b from-transparent via-emerald/40 to-transparent opacity-50"></div>
-            <p className="text-xs tracking-widest uppercase">Scroll</p>
+        {/* Enhanced Scroll Indicator */}
+        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 reveal-fade">
+          <div className="flex flex-col items-center space-y-3 text-emerald/80">
+            <div className="w-px h-16 bg-gradient-to-b from-emerald via-emerald/50 to-transparent animate-pulse"></div>
+            <p className="text-xs tracking-widest uppercase font-medium">DISCOVER MORE</p>
           </div>
         </div>
       </section>
