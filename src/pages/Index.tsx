@@ -30,221 +30,310 @@ const Index = () => {
     <div className="min-h-screen bg-background dark">
       <Navigation />
       
-      {/* Hero Section - Instant Impact Design */}
-      <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
-        {/* Dynamic Background Pattern */}
-        <div className="absolute inset-0 opacity-[0.08]">
-          <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald blur-3xl animate-pulse"></div>
-          <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-steel blur-3xl animate-pulse"></div>
-          <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-4 h-4 bg-emerald rounded-full animate-ping"></div>
-        </div>
-
-        {/* Real-time Data Flow Animation */}
-        <div className="absolute inset-0 overflow-hidden">
-          <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/30 to-transparent animate-pulse"></div>
-          <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/20 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
-          <div className="absolute bottom-1/3 right-0 w-full h-px bg-gradient-to-l from-transparent via-steel/20 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
-        </div>
-
-        <div className="relative max-w-6xl mx-auto px-6 lg:px-8 text-center space-premium">
-          {/* Ultra-Prominent Live Status */}
-          <div className="reveal-fade mb-12">
-            <div className="inline-flex items-center gap-3 px-6 py-3 bg-emerald/15 border border-emerald/30 rounded-full text-emerald text-base font-bold backdrop-blur-sm">
-              <div className="w-3 h-3 bg-emerald rounded-full animate-pulse shadow-emerald shadow-lg"></div>
-              AI CAPITAL ENGINE LIVE • ₹847CR UNDER MANAGEMENT
-            </div>
+        {/* Hero Section - 100x Better Impact */}
+        <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
+          {/* AI Data Flow Background */}
+          <div className="absolute inset-0 opacity-[0.12]">
+            <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald blur-3xl animate-pulse"></div>
+            <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-gold blur-3xl animate-pulse"></div>
+            <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-emerald rounded-full animate-ping"></div>
           </div>
 
-          {/* Hero Content - Immediate Impact */}
-          <div className="space-y-10">
-            {/* Power Opening */}
-            <div className="reveal-up reveal-stagger-1">
-              <h1 className="text-6xl lg:text-8xl font-black text-white leading-none tracking-tight mb-6">
-                WEALTH
-                <br />
-                <span className="bg-gradient-to-r from-emerald via-emerald-light to-steel-light bg-clip-text text-transparent">
-                  BLOCKS™
+          {/* Live ROI Data Streams */}
+          <div className="absolute inset-0 overflow-hidden">
+            <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/40 to-transparent animate-pulse"></div>
+            <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
+            <div className="absolute bottom-1/3 right-0 w-full h-px bg-gradient-to-l from-transparent via-emerald/20 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
+          </div>
+
+          <div className="relative max-w-6xl mx-auto px-4 lg:px-8 text-center">
+            {/* Real-Time Status - Maximum Impact */}
+            <div className="reveal-fade mb-8 lg:mb-12">
+              <div className="inline-flex items-center gap-3 px-4 py-3 lg:px-6 lg:py-3 bg-emerald/20 border border-emerald/40 rounded-full text-emerald text-sm lg:text-base font-bold backdrop-blur-md">
+                <div className="w-3 h-3 bg-emerald rounded-full animate-pulse shadow-emerald shadow-lg"></div>
+                <span className="hidden sm:inline">AI CAPITAL ENGINE LIVE</span>
+                <span className="sm:hidden">AI ENGINE LIVE</span>
+                <span className="text-xs lg:text-sm">• ₹847CR UNDER MANAGEMENT</span>
+              </div>
+            </div>
+
+            {/* Power Tagline - First 3 Seconds */}
+            <div className="reveal-up reveal-stagger-1 space-y-6 lg:space-y-10">
+              <h1 className="text-4xl sm:text-5xl lg:text-7xl xl:text-8xl font-black text-white leading-none tracking-tight">
+                <span className="block">THE PRIVATE</span>
+                <span className="block bg-gradient-to-r from-emerald via-gold to-emerald bg-clip-text text-transparent">
+                  WEALTH ENGINE
+                </span>
+                <span className="block text-2xl sm:text-3xl lg:text-4xl text-emerald font-medium mt-4">
+                  BUILT FOR THE MIDDLE CLASS
                 </span>
               </h1>
-              <div className="text-2xl lg:text-3xl text-emerald font-bold tracking-wide">
-                PRIVATE CAPITAL • ENGINEERED RETURNS • AI-OPTIMIZED
-              </div>
             </div>
 
-            {/* Hook - First 3 Second Impact */}
-            <div className="reveal-up reveal-stagger-2 max-w-3xl mx-auto">
-              <p className="text-2xl lg:text-3xl text-white font-semibold leading-tight mb-6">
-                STOP LOSING TO INFLATION
+            {/* Immediate Hook */}
+            <div className="reveal-up reveal-stagger-2 max-w-4xl mx-auto mt-8 lg:mt-12">
+              <p className="text-xl sm:text-2xl lg:text-3xl text-white font-semibold leading-tight mb-4 lg:mb-6">
+                STOP ACCEPTING 6% WHILE THE ELITE EARN 23%
               </p>
-              <p className="text-xl text-gray-300 leading-relaxed mb-4">
-                While you earn 6% in FDs, the select few compound at 15-23% in private capital markets.
+              <p className="text-base lg:text-xl text-gray-300 leading-relaxed mb-4">
+                Private capital markets generate 15-23% returns. Until now, they required ₹1Cr+ entry.
               </p>
-              <p className="text-lg text-emerald font-medium">
-                This is your invitation to cross over.
+              <p className="text-base lg:text-lg text-emerald font-bold">
+                We engineered access starting at ₹15K.
               </p>
             </div>
 
-            {/* Immediate Action CTA */}
-            <div className="reveal-up reveal-stagger-3 pt-4">
-              <div className="flex flex-col sm:flex-row items-center justify-center gap-8">
+            {/* Dual CTA */}
+            <div className="reveal-up reveal-stagger-3 pt-6 lg:pt-8">
+              <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-8 mb-6 lg:mb-8">
                 <a 
                   href="/access"
-                  className="group px-12 py-6 bg-emerald text-black rounded-xl hover:bg-emerald/90 transition-all duration-300 wealth-hover font-black text-xl shadow-emerald/50 shadow-2xl"
+                  className="w-full sm:w-auto group px-8 lg:px-12 py-4 lg:py-6 bg-emerald text-black rounded-xl hover:bg-emerald/90 transition-all duration-300 wealth-hover font-black text-lg lg:text-xl shadow-emerald/50 shadow-2xl"
                 >
-                  <span className="flex items-center gap-3">
-                    <Zap className="w-6 h-6" />
-                    APPLY NOW • LIMITED ACCESS
+                  <span className="flex items-center justify-center gap-3">
+                    <Zap className="w-5 h-5 lg:w-6 lg:h-6" />
+                    START WITH ₹10K
                   </span>
                 </a>
-                <div className="text-sm text-gray-400 text-center">
-                  <div className="font-medium">97% rejection rate</div>
-                  <div>Private capital requires verification</div>
-                </div>
+                <a 
+                  href="/portfolio"
+                  className="w-full sm:w-auto px-8 lg:px-12 py-4 lg:py-6 border-2 border-emerald/50 text-emerald rounded-xl hover:bg-emerald/10 transition-all duration-300 font-semibold text-lg lg:text-xl"
+                >
+                  EXPLORE PORTFOLIO CASES
+                </a>
+              </div>
+              
+              <div className="text-xs lg:text-sm text-gray-400 text-center max-w-md mx-auto">
+                <div className="font-medium">97% rejection rate • Private capital requires verification</div>
               </div>
             </div>
 
-            {/* Live Performance Ticker */}
-            <div className="reveal-up reveal-stagger-4 pt-8">
-              <div className="grid grid-cols-3 gap-6 max-w-2xl mx-auto">
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-emerald">15-23%</div>
-                  <div className="text-sm text-gray-400">Annual Returns</div>
+            {/* Live Performance Mini-Dashboard */}
+            <div className="reveal-up reveal-stagger-4 pt-8 lg:pt-12">
+              <div className="grid grid-cols-3 gap-4 lg:gap-8 max-w-3xl mx-auto">
+                <div className="text-center p-3 lg:p-4 bg-emerald/10 rounded-lg border border-emerald/20">
+                  <div className="text-lg lg:text-2xl font-bold text-emerald">15-23%</div>
+                  <div className="text-xs lg:text-sm text-gray-400">Annual Returns</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-emerald">₹15K</div>
-                  <div className="text-sm text-gray-400">Min Investment</div>
+                <div className="text-center p-3 lg:p-4 bg-gold/10 rounded-lg border border-gold/20">
+                  <div className="text-lg lg:text-2xl font-bold text-gold">₹15K</div>
+                  <div className="text-xs lg:text-sm text-gray-400">Min Investment</div>
                 </div>
-                <div className="text-center">
-                  <div className="text-2xl font-bold text-emerald">24M</div>
-                  <div className="text-sm text-gray-400">Liquidity Window</div>
+                <div className="text-center p-3 lg:p-4 bg-emerald/10 rounded-lg border border-emerald/20">
+                  <div className="text-lg lg:text-2xl font-bold text-emerald">24M</div>
+                  <div className="text-xs lg:text-sm text-gray-400">Liquidity Window</div>
                 </div>
               </div>
             </div>
           </div>
-        </div>
 
-        {/* Enhanced Scroll Indicator */}
-        <div className="absolute bottom-8 left-1/2 transform -translate-x-1/2 reveal-fade">
-          <div className="flex flex-col items-center space-y-3 text-emerald/80">
-            <div className="w-px h-16 bg-gradient-to-b from-emerald via-emerald/50 to-transparent animate-pulse"></div>
-            <p className="text-xs tracking-widest uppercase font-medium">DISCOVER MORE</p>
-          </div>
-        </div>
-      </section>
-
-      {/* Brief Platform Overview */}
-      <section className="relative bg-black border-t border-emerald/10 py-24">
-        <div className="max-w-6xl mx-auto px-6 lg:px-8">
-          {/* AI Signal Header */}
-          <div className="text-center mb-16">
-            <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-6">
-              <Brain className="w-4 h-4" />
-              AI-Driven Capital Architecture
+          {/* Mobile Scroll Indicator */}
+          <div className="absolute bottom-4 lg:bottom-8 left-1/2 transform -translate-x-1/2 reveal-fade">
+            <div className="flex flex-col items-center space-y-2 lg:space-y-3 text-emerald/80">
+              <div className="w-px h-12 lg:h-16 bg-gradient-to-b from-emerald via-emerald/50 to-transparent animate-pulse"></div>
+              <p className="text-[10px] lg:text-xs tracking-widest uppercase font-medium">DISCOVER</p>
             </div>
-            <h2 className="text-title font-bold text-white mb-4">
-              The Tiered System for Investors Who Reject Mediocrity
-            </h2>
-            <p className="text-gray-400 max-w-2xl mx-auto">
-              Three distinct performance tiers, each engineered to balance growth with intelligent risk management.
-            </p>
           </div>
+        </section>
 
-          {/* Tier Cards */}
-          <div className="grid md:grid-cols-3 gap-8">
-            {[
-              {
-                name: "PRIME BLOCK",
-                range: "₹15K-₹2L",
-                returns: "8-12%",
-                icon: Shield,
-                description: "For those transitioning from FDs to real growth",
-                features: ["AI-allocated across 3 institutional-grade private funds", "24-month liquidity windows", "Smart money growth acceleration"]
-              },
-              {
-                name: "MOMENTUM BLOCK", 
-                range: "₹2L-₹20L",
-                returns: "11-18%",
-                icon: TrendingUp,
-                description: "Where professionals convert salary into legacy",
-                features: ["5-fund rotation with automatic drawdown protection", "Quarterly AI rebalancing", "Capital memory recovery system"]
-              },
-              {
-                name: "LEGACY BLOCK",
-                range: "₹20L+",
-                returns: "15-23%", 
-                icon: BarChart3,
-                description: "How families quietly compound generational wealth",
-                features: ["Direct access to offshore-grade instruments", "Multi-block compound strategies", "Private onboarding only"]
-              }
-            ].map((tier, index) => (
-              <div key={tier.name} className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 transition-all duration-700">
+        {/* What's Inside Preview */}
+        <section className="relative bg-black border-t border-emerald/10 py-16 lg:py-24">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
+            {/* Section Header */}
+            <div className="text-center mb-12 lg:mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-6">
+                <Brain className="w-4 h-4" />
+                AI-Driven Capital Architecture
+              </div>
+              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-4">
+                What's Inside: Investment Tiers
+              </h2>
+              <p className="text-gray-400 max-w-2xl mx-auto text-base lg:text-lg">
+                Three engineered performance tiers. Each optimized for different scales, same elite standards.
+              </p>
+            </div>
+
+            {/* Mobile-First Tier Cards */}
+            <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+              {[
+                {
+                  name: "PRIME BLOCK",
+                  range: "₹15K-₹2L",
+                  returns: "8-12%",
+                  holdingPercent: "35%",
+                  riskLevel: "Low",
+                  lockIn: "24 months",
+                  icon: Shield,
+                  description: "FD to growth transition",
+                  highlights: ["3 institutional funds", "AI allocation", "Zero stress entry"]
+                },
+                {
+                  name: "MOMENTUM BLOCK", 
+                  range: "₹2L-₹20L",
+                  returns: "11-18%",
+                  holdingPercent: "52%",
+                  riskLevel: "Medium",
+                  lockIn: "24 months",
+                  icon: TrendingUp,
+                  description: "Salary to legacy converter",
+                  highlights: ["5-fund rotation", "Quarterly rebalancing", "Drawdown protection"]
+                },
+                {
+                  name: "LEGACY BLOCK",
+                  range: "₹20L+",
+                  returns: "15-23%",
+                  holdingPercent: "78%",
+                  riskLevel: "Optimized",
+                  lockIn: "24 months",
+                  icon: BarChart3,
+                  description: "Generational wealth engine",
+                  highlights: ["Offshore access", "Multi-block strategy", "Private onboarding"]
+                }
+              ].map((tier, index) => (
+                <div key={tier.name} className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 transition-all duration-700 cursor-pointer">
+                  {/* Header */}
+                  <div className="flex items-center justify-between mb-4">
+                    <div className="flex items-center gap-3">
+                      <div className="p-2 bg-emerald/10 rounded-lg">
+                        <tier.icon className="w-5 h-5 text-emerald" />
+                      </div>
+                      <div className="live-indicator text-xs">
+                        <Activity className="w-3 h-3" />
+                        Live
+                      </div>
+                    </div>
+                    <div className="text-xs text-emerald font-bold">{tier.holdingPercent} HOLDING</div>
+                  </div>
+                  
+                  {/* Title & Range */}
+                  <h3 className="text-lg font-bold text-white mb-1">{tier.name}</h3>
+                  <p className="text-emerald font-semibold mb-2">{tier.range}</p>
+                  <p className="text-gray-400 text-sm mb-4">{tier.description}</p>
+                  
+                  {/* Performance */}
+                  <div className="grid grid-cols-2 gap-3 mb-4">
+                    <div className="text-center p-2 bg-emerald/10 rounded">
+                      <div className="text-lg font-bold text-emerald">{tier.returns}</div>
+                      <div className="text-xs text-gray-400">Expected ROI</div>
+                    </div>
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-lg font-bold text-white">{tier.riskLevel}</div>
+                      <div className="text-xs text-gray-400">Risk Level</div>
+                    </div>
+                  </div>
+                  
+                  {/* Lock-in */}
+                  <div className="text-center p-2 bg-gold/10 rounded mb-4">
+                    <div className="text-sm font-bold text-gold">{tier.lockIn} strategic horizon</div>
+                  </div>
+                  
+                  {/* Highlights */}
+                  <ul className="space-y-2">
+                    {tier.highlights.map((feature, i) => (
+                      <li key={i} className="text-xs text-gray-400 flex items-center gap-2">
+                        <div className="w-1 h-1 bg-emerald rounded-full"></div>
+                        {feature}
+                      </li>
+                    ))}
+                  </ul>
+                  
+                  {/* Hover CTA */}
+                  <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="/tiers" className="text-xs text-emerald hover:text-emerald-light font-medium">
+                      See past performance →
+                    </a>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+            {/* Mobile CTA */}
+            <div className="text-center mt-8 lg:mt-12">
+              <a 
+                href="/tiers"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-emerald/10 border border-emerald/30 rounded-lg text-emerald hover:bg-emerald/20 transition-all duration-300 text-sm font-medium"
+              >
+                Compare all tiers
+                <TrendingUp className="w-4 h-4" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        {/* Trust & Testimonials */}
+        <section className="relative bg-black border-t border-emerald/10 py-16 lg:py-24">
+          <div className="max-w-6xl mx-auto px-4 lg:px-8">
+            {/* Trust Header */}
+            <div className="text-center mb-12 lg:mb-16">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-6">
+                <Activity className="w-4 h-4 animate-pulse" />
+                Live Performance Data
+              </div>
+              
+              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
+                Elite Capital, Middle-Class Access
+              </h2>
+              
+              <p className="text-base lg:text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                The top 3% of Indian investors operate in private capital. We engineered the bridge.
+              </p>
+            </div>
+            
+            {/* Trust Metrics */}
+            <div className="grid grid-cols-3 lg:grid-cols-3 gap-4 lg:gap-8 mb-12 lg:mb-16">
+              {[
+                { metric: "15-23%", label: "Returns", icon: TrendingUp },
+                { metric: "Zero", label: "Defaults", icon: Shield },
+                { metric: "₹847Cr", label: "Under Mgmt", icon: BarChart3 }
+              ].map((stat, index) => (
+                <div key={index} className="dashboard-tile bg-gray-900/30 border border-emerald/10 p-4 lg:p-6 text-center">
+                  <div className="flex items-center justify-center mb-3">
+                    <stat.icon className="w-6 h-6 lg:w-8 lg:h-8 text-emerald" />
+                  </div>
+                  <div className="text-lg lg:text-2xl font-bold text-white mb-1">{stat.metric}</div>
+                  <div className="text-xs lg:text-sm text-gray-400">{stat.label}</div>
+                </div>
+              ))}
+            </div>
+
+            {/* Raw Testimonials */}
+            <div className="grid lg:grid-cols-2 gap-6 lg:gap-8">
+              <div className="dashboard-tile bg-gray-900/30 border border-emerald/10 p-6">
                 <div className="flex items-center gap-3 mb-4">
-                  <div className="p-2 bg-emerald/10 rounded-lg">
-                    <tier.icon className="w-5 h-5 text-emerald" />
+                  <div className="w-10 h-10 bg-emerald/20 rounded-full flex items-center justify-center">
+                    <span className="text-emerald font-bold text-sm">AD</span>
                   </div>
-                  <div className="live-indicator">
-                    <Activity className="w-3 h-3" />
-                    Active
+                  <div>
+                    <div className="text-white font-medium text-sm">Startup Founder</div>
+                    <div className="text-gray-400 text-xs">Momentum Block • 18 months</div>
                   </div>
+                  <div className="ml-auto live-indicator text-xs">Live</div>
                 </div>
-                
-                <h3 className="text-lg font-bold text-white mb-1">{tier.name}</h3>
-                <p className="text-emerald font-semibold mb-2">{tier.range}</p>
-                <p className="text-gray-400 text-sm mb-4">{tier.description}</p>
-                
-                <div className="flex items-center justify-between mb-4">
-                  <span className="text-2xl font-bold text-white">{tier.returns}</span>
-                  <span className="text-sm text-gray-400">Annual Returns</span>
-                </div>
-                
-                <ul className="space-y-2">
-                  {tier.features.map((feature, i) => (
-                    <li key={i} className="text-sm text-gray-400 flex items-center gap-2">
-                      <div className="w-1 h-1 bg-emerald rounded-full"></div>
-                      {feature}
-                    </li>
-                  ))}
-                </ul>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  "My ₹8L is outperforming the ₹25L I have in mutual funds. Zero stress, AI handles everything."
+                </p>
+                <div className="mt-4 text-emerald text-xs font-medium">+42% growth</div>
               </div>
-            ))}
-          </div>
-        </div>
-      </section>
 
-      {/* Trust Anchor */}
-      <section className="relative bg-black border-t border-emerald/10 py-24">
-        <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
-          <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-8">
-            <Activity className="w-4 h-4 animate-pulse" />
-            Live Performance Data
-          </div>
-          
-          <h2 className="text-title font-bold text-white mb-6">
-            Where India's Most Discerning Investors Quietly Grow Their Wealth
-          </h2>
-          
-          <p className="text-xl text-gray-300 leading-relaxed mb-8">
-            The top 9% of Indian portfolios don't chase markets—they're built in private financial architectures. 
-            A select group compounds at 12-23% with institutional safeguards.
-          </p>
-          
-          <div className="grid md:grid-cols-3 gap-8 mt-12">
-            {[
-              { metric: "12-23%", label: "Annual Returns", icon: TrendingUp },
-              { metric: "Zero", label: "Defaults Since 2015", icon: Shield },
-              { metric: "24 Months", label: "Strategic Liquidity", icon: Zap }
-            ].map((stat, index) => (
-              <div key={index} className="dashboard-tile bg-gray-900/30 border border-emerald/10">
-                <div className="flex items-center justify-center mb-4">
-                  <stat.icon className="w-8 h-8 text-emerald" />
+              <div className="dashboard-tile bg-gray-900/30 border border-emerald/10 p-6">
+                <div className="flex items-center gap-3 mb-4">
+                  <div className="w-10 h-10 bg-gold/20 rounded-full flex items-center justify-center">
+                    <span className="text-gold font-bold text-sm">RK</span>
+                  </div>
+                  <div>
+                    <div className="text-white font-medium text-sm">Family Office</div>
+                    <div className="text-gray-400 text-xs">Legacy Block • 24 months</div>
+                  </div>
+                  <div className="ml-auto live-indicator text-xs">Live</div>
                 </div>
-                <div className="text-2xl font-bold text-white mb-2">{stat.metric}</div>
-                <div className="text-sm text-gray-400">{stat.label}</div>
+                <p className="text-gray-300 text-sm leading-relaxed">
+                  "Finally, institutional access without the bureaucracy. Returns speak louder than promises."
+                </p>
+                <div className="mt-4 text-emerald text-xs font-medium">+65% growth</div>
               </div>
-            ))}
+            </div>
           </div>
-        </div>
-      </section>
+        </section>
 
       {/* Simplified CTA */}
       <section className="relative bg-black border-t border-emerald/10 py-24">

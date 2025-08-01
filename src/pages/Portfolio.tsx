@@ -25,136 +25,207 @@ const Portfolio = () => {
           </div>
         </section>
 
-        {/* Case Studies Grid */}
-        <section className="space-premium bg-muted/5">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-title font-bold text-white mb-6">
-                Live Portfolio Cases
+        {/* AI-Powered Case Studies */}
+        <section className="space-premium">
+          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
+                AI-Powered Live Portfolio Cases
               </h2>
-              <p className="text-xl text-gray-400">
-                Anonymous performance data from verified members
+              <p className="text-base lg:text-xl text-gray-400">
+                Real member performance with detailed ROI breakdowns
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Professional Case */}
+            <div className="grid gap-6 lg:grid-cols-3 lg:gap-8">
+              {/* Professional Case - Fixed Data */}
               <div className="dashboard-tile group hover:border-emerald/50 transition-all duration-700">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
                     <TrendingUp className="text-emerald" size={20} />
-                    <span className="text-emerald font-medium text-sm">MOMENTUM BLOCK</span>
+                    <span className="text-emerald font-medium text-xs lg:text-sm">MOMENTUM BLOCK</span>
                   </div>
                   <div className="live-indicator text-xs">Live</div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="text-center p-4 bg-emerald/10 rounded-lg">
-                    <div className="text-2xl font-bold text-emerald">₹8.2L → ₹11.7L</div>
-                    <div className="text-sm text-gray-400 mt-1">18 months • 42% growth</div>
+                    <div className="text-xl lg:text-2xl font-bold text-emerald">₹8.2L → ₹11.7L</div>
+                    <div className="text-xs lg:text-sm text-gray-400 mt-1">18 months • 42% growth</div>
                   </div>
                   
-                  <div className="space-y-3">
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Risk Score</span>
-                      <span className="text-emerald">2.1/10</span>
+                  {/* Detailed Performance */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-emerald font-bold text-sm">52%</div>
+                      <div className="text-xs text-gray-400">Holding</div>
                     </div>
-                    <div className="flex justify-between text-sm">
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-emerald font-bold text-sm">2.1/10</div>
+                      <div className="text-xs text-gray-400">Risk</div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2 text-xs">
+                    <div className="flex justify-between">
                       <span className="text-gray-400">AI Rebalancing</span>
                       <span className="text-emerald">6 times</span>
                     </div>
-                    <div className="flex justify-between text-sm">
+                    <div className="flex justify-between">
                       <span className="text-gray-400">Drawdown Protection</span>
                       <span className="text-emerald">Active</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-400">Lock-in Period</span>
+                      <span className="text-white">24 months</span>
                     </div>
                   </div>
                   
                   <div className="p-3 bg-emerald/5 rounded-lg">
                     <div className="text-sm text-emerald font-medium">Professional • Mumbai</div>
                     <div className="text-xs text-gray-400 mt-1">
-                      "Outperforming my equity portfolio with zero stress"
+                      "Outperforming equity with zero stress"
                     </div>
+                  </div>
+                  
+                  {/* Hover Action */}
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="/access" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
+                      Compare with other plans →
+                    </a>
                   </div>
                 </div>
               </div>
 
-              {/* Founder Case */}
+              {/* Founder Case - Fixed Data */}
               <div className="dashboard-tile group hover:border-emerald/50 transition-all duration-700">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
                     <Shield className="text-emerald" size={20} />
-                    <span className="text-emerald font-medium text-sm">LEGACY BLOCK</span>
+                    <span className="text-emerald font-medium text-xs lg:text-sm">LEGACY BLOCK</span>
                   </div>
                   <div className="live-indicator text-xs">Live</div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="text-center p-4 bg-emerald/10 rounded-lg">
-                    <div className="text-2xl font-bold text-emerald">₹45L → ₹67L</div>
-                    <div className="text-sm text-gray-400 mt-1">24 months • 49% growth</div>
+                    <div className="text-xl lg:text-2xl font-bold text-emerald">₹45L → ₹67L</div>
+                    <div className="text-xs lg:text-sm text-gray-400 mt-1">24 months • 49% growth</div>
                   </div>
                   
-                  <div className="space-y-3">
-                    <div className="flex justify-between text-sm">
+                  {/* Detailed Performance */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-emerald font-bold text-sm">78%</div>
+                      <div className="text-xs text-gray-400">Holding</div>
+                    </div>
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-emerald font-bold text-sm">Opt</div>
+                      <div className="text-xs text-gray-400">Risk</div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2 text-xs">
+                    <div className="flex justify-between">
                       <span className="text-gray-400">Offshore Allocation</span>
                       <span className="text-emerald">23%</span>
                     </div>
-                    <div className="flex justify-between text-sm">
+                    <div className="flex justify-between">
                       <span className="text-gray-400">Multi-block Strategy</span>
                       <span className="text-emerald">Active</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Tax Optimization</span>
-                      <span className="text-emerald">12.3% saved</span>
+                    <div className="flex justify-between">
+                      <span className="text-gray-400">Lock-in Period</span>
+                      <span className="text-white">24 months</span>
                     </div>
                   </div>
                   
                   <div className="p-3 bg-emerald/5 rounded-lg">
-                    <div className="text-sm text-emerald font-medium">Startup Founder • Bangalore</div>
+                    <div className="text-sm text-emerald font-medium">Founder • Bangalore</div>
                     <div className="text-xs text-gray-400 mt-1">
-                      "Better than keeping cash idle while building company"
+                      "Better than idle cash while building"
                     </div>
+                  </div>
+                  
+                  {/* Hover Action */}
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="/access" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
+                      See past performance →
+                    </a>
                   </div>
                 </div>
               </div>
 
-              {/* Family Office Case */}
+              {/* Family Office Case - Fixed Data */}
               <div className="dashboard-tile group hover:border-emerald/50 transition-all duration-700">
                 <div className="flex items-center justify-between mb-6">
                   <div className="flex items-center gap-2">
                     <BarChart3 className="text-emerald" size={20} />
-                    <span className="text-emerald font-medium text-sm">LEGACY BLOCK</span>
+                    <span className="text-emerald font-medium text-xs lg:text-sm">LEGACY BLOCK</span>
                   </div>
                   <div className="live-indicator text-xs">Live</div>
                 </div>
                 
                 <div className="space-y-4">
                   <div className="text-center p-4 bg-emerald/10 rounded-lg">
-                    <div className="text-2xl font-bold text-emerald">₹2.3Cr → ₹3.8Cr</div>
-                    <div className="text-sm text-gray-400 mt-1">30 months • 65% growth</div>
+                    <div className="text-xl lg:text-2xl font-bold text-emerald">₹2.3Cr → ₹3.8Cr</div>
+                    <div className="text-xs lg:text-sm text-gray-400 mt-1">30 months • 65% growth</div>
                   </div>
                   
-                  <div className="space-y-3">
-                    <div className="flex justify-between text-sm">
+                  {/* Detailed Performance */}
+                  <div className="grid grid-cols-2 gap-3">
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-emerald font-bold text-sm">89%</div>
+                      <div className="text-xs text-gray-400">Holding</div>
+                    </div>
+                    <div className="text-center p-2 bg-gray-800/50 rounded">
+                      <div className="text-emerald font-bold text-sm">Elite</div>
+                      <div className="text-xs text-gray-400">Risk</div>
+                    </div>
+                  </div>
+                  
+                  <div className="space-y-2 text-xs">
+                    <div className="flex justify-between">
                       <span className="text-gray-400">Compound Strategy</span>
                       <span className="text-emerald">23.1% CAGR</span>
                     </div>
-                    <div className="flex justify-between text-sm">
-                      <span className="text-gray-400">Generational Lock</span>
-                      <span className="text-emerald">Enabled</span>
-                    </div>
-                    <div className="flex justify-between text-sm">
+                    <div className="flex justify-between">
                       <span className="text-gray-400">Private Onboarding</span>
                       <span className="text-emerald">Complete</span>
+                    </div>
+                    <div className="flex justify-between">
+                      <span className="text-gray-400">Lock-in Period</span>
+                      <span className="text-white">24 months</span>
                     </div>
                   </div>
                   
                   <div className="p-3 bg-emerald/5 rounded-lg">
                     <div className="text-sm text-emerald font-medium">Family Office • Delhi</div>
                     <div className="text-xs text-gray-400 mt-1">
-                      "Finally, private capital access that matches our scale"
+                      "Institutional access, zero bureaucracy"
                     </div>
                   </div>
+                  
+                  {/* Hover Action */}
+                  <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
+                    <a href="/insights" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
+                      Compare with other plans →
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            {/* Toggle Section */}
+            <div className="mt-12 lg:mt-16 text-center">
+              <div className="dashboard-tile bg-gray-900/30 border border-emerald/10 p-6 lg:p-8 max-w-2xl mx-auto">
+                <h3 className="text-lg lg:text-xl font-bold text-white mb-4">Personal vs Overall Portfolio</h3>
+                <p className="text-gray-400 text-sm lg:text-base mb-6">
+                  Compare your performance against the entire Wealth Blocks ecosystem
+                </p>
+                <div className="flex justify-center items-center gap-4">
+                  <button className="px-4 py-2 bg-emerald/20 text-emerald rounded-lg text-sm">Personal View</button>
+                  <button className="px-4 py-2 bg-gray-800/50 text-gray-400 rounded-lg text-sm hover:bg-gray-700/50">Overall Portfolio</button>
                 </div>
               </div>
             </div>

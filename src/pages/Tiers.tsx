@@ -1,74 +1,121 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 import { Link } from 'react-router-dom';
+import { Activity, Shield } from 'lucide-react';
 
 const Tiers = () => {
   return (
-    <div className="min-h-screen bg-background dark">
+    <div className="min-h-screen bg-black dark">
       <Navigation />
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="space-premium bg-subtle">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
+        <section className="space-premium bg-black">
+          <div className="max-w-7xl mx-auto px-4 lg:px-8">
             <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-title font-bold text-primary mb-6">
-                The Tiered System for Investors Who Reject Mediocrity
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-8">
+                <Activity className="w-4 h-4 animate-pulse" />
+                Investment Tiers Active
+              </div>
+              <h1 className="text-3xl lg:text-5xl font-bold text-white mb-6">
+                Choose Your Wealth Architecture
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                Wealth Blocks isn't a product—it's a private capital ecosystem engineered to balance performance with three distinct tiers.
+              <p className="text-lg lg:text-xl text-gray-300 leading-relaxed">
+                Three engineered tiers. Each optimized for different scales, built with institutional-grade standards.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Detailed Tiers */}
+        {/* Tier Cards - Mobile First */}
         <section className="space-premium">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="space-y-16">
+          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            <div className="space-y-8 lg:space-y-16">
               
               {/* Prime Block */}
-              <div className="exclusive-card p-12">
-                <div className="grid lg:grid-cols-2 gap-12 items-center">
+              <div className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 p-6 lg:p-12 transition-all duration-700">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
                   <div>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="p-3 bg-emerald/10 rounded-lg">
+                        <Shield className="w-6 h-6 text-emerald" />
+                      </div>
+                      <div className="live-indicator text-sm">
+                        <Activity className="w-3 h-3" />
+                        Active
+                      </div>
+                    </div>
+                    
                     <div className="mb-6">
-                      <h2 className="text-3xl font-bold text-emerald mb-2">PRIME BLOCK</h2>
-                      <p className="text-xl text-muted-foreground">₹15K-₹2L</p>
-                      <p className="text-lg text-steel-dark mt-2">For those transitioning from FDs to real growth</p>
+                      <h2 className="text-2xl lg:text-3xl font-bold text-emerald mb-2">PRIME BLOCK</h2>
+                      <p className="text-lg lg:text-xl text-gray-300">₹15K-₹2L</p>
+                      <p className="text-base lg:text-lg text-gray-400 mt-2">FD to growth transition tier</p>
                     </div>
                     
                     <div className="space-y-6">
-                      <div className="text-4xl font-bold text-primary">8-12% Returns</div>
+                      {/* Key Metrics */}
+                      <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                        <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                          <div className="text-lg lg:text-xl font-bold text-emerald">8-12%</div>
+                          <div className="text-xs text-gray-400">Expected ROI</div>
+                        </div>
+                        <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                          <div className="text-lg lg:text-xl font-bold text-white">35%</div>
+                          <div className="text-xs text-gray-400">Holding %</div>
+                        </div>
+                        <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                          <div className="text-lg lg:text-xl font-bold text-white">Low</div>
+                          <div className="text-xs text-gray-400">Risk Level</div>
+                        </div>
+                        <div className="text-center p-3 bg-gold/10 rounded-lg">
+                          <div className="text-lg lg:text-xl font-bold text-gold">24M</div>
+                          <div className="text-xs text-gray-400">Lock-in</div>
+                        </div>
+                      </div>
                       
-                      <ul className="space-y-3 text-muted-foreground">
+                      <ul className="space-y-3 text-gray-300">
                         <li className="flex items-start gap-3">
                           <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                          <span>AI-allocated across 3 institutional-grade private funds</span>
+                          <span className="text-sm lg:text-base">AI-allocated across 3 institutional-grade private funds</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                          <span>8-12% returns with 24-month liquidity windows (compare to 5-7 year lock-ins in comparable PE funds)</span>
+                          <span className="text-sm lg:text-base">24-month strategic liquidity vs 5-7 year PE lock-ins</span>
                         </li>
                         <li className="flex items-start gap-3">
                           <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                          <span>Your money grows smarter here in 2 years than it would in 5 elsewhere</span>
+                          <span className="text-sm lg:text-base">Smart money growth acceleration protocol</span>
                         </li>
                       </ul>
                       
-                      <div className="bg-steel-light/30 p-4 rounded-lg">
-                        <p className="text-emerald font-semibold">Example: ₹10L here outperforms ₹1Cr in your bank account</p>
+                      <div className="bg-emerald/10 p-4 rounded-lg">
+                        <p className="text-emerald font-semibold text-sm lg:text-base">₹1L here outperforms ₹5L in bank FDs</p>
                       </div>
                     </div>
                   </div>
                   
-                  <div className="bg-gradient-to-br from-emerald/10 to-steel-light/20 p-8 rounded-lg">
-                    <h3 className="text-xl font-semibold text-foreground mb-4">Why Prime Block Works</h3>
-                    <ul className="space-y-3 text-sm text-muted-foreground">
-                      <li>• Institutional-grade diversification across verified private funds</li>
-                      <li>• AI-powered allocation prevents concentration risk</li>
-                      <li>• Liquidity engineering ensures 24-month exit readiness</li>
-                      <li>• Entry-level access to elite investment strategies</li>
-                    </ul>
+                  <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
+                    <h3 className="text-lg lg:text-xl font-semibold text-white mb-4">Trust-Building CTAs</h3>
+                    <div className="space-y-4">
+                      <a href="/portfolio" className="block p-3 bg-emerald/10 rounded-lg hover:bg-emerald/20 transition-all">
+                        <div className="text-emerald font-medium text-sm">See Past Performance</div>
+                        <div className="text-gray-400 text-xs mt-1">View anonymous member results</div>
+                      </a>
+                      <a href="/architecture" className="block p-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all">
+                        <div className="text-white font-medium text-sm">Compare with FDs</div>
+                        <div className="text-gray-400 text-xs mt-1">Side-by-side analysis</div>
+                      </a>
+                    </div>
+                    
+                    <div className="mt-6 p-4 bg-emerald/5 rounded-lg">
+                      <h4 className="text-white font-medium mb-3 text-sm">Prime Block Advantages</h4>
+                      <ul className="space-y-2 text-xs text-gray-400">
+                        <li>• Institutional diversification, retail access</li>
+                        <li>• AI prevents concentration risk</li>
+                        <li>• Engineered 24-month exit readiness</li>
+                        <li>• Elite strategies, middle-class entry</li>
+                      </ul>
+                    </div>
                   </div>
                 </div>
               </div>

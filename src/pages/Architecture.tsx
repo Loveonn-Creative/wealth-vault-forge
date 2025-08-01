@@ -1,113 +1,187 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
-import { Shield, Brain, Lock, TrendingUp } from 'lucide-react';
+import { Shield, Brain, Lock, TrendingUp, Activity } from 'lucide-react';
 
 const Architecture = () => {
   return (
-    <div className="min-h-screen bg-background">
+    <div className="min-h-screen bg-black dark">
       <Navigation />
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="space-premium bg-subtle">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-title font-bold text-primary mb-6">
-                THE DEFENSIVE ARCHITECTURE
+        <section className="space-premium bg-black">
+          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            <div className="text-center max-w-5xl mx-auto">
+              <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-8">
+                <Brain className="w-4 h-4" />
+                AI Capital Architecture
+              </div>
+              <h1 className="text-3xl lg:text-5xl font-bold text-white mb-8">
+                How We Make Your Money Work Smarter
               </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                How Wealth Blocks Engineered India's First Zero-Default Private Capital Architecture, Since 2015
+              <p className="text-lg lg:text-xl text-gray-300 leading-relaxed mb-8">
+                The deep-tech architecture behind India's first zero-default private capital engine
               </p>
               
-              <div className="mt-12 p-6 bg-emerald/10 rounded-lg">
-                <p className="text-lg font-semibold text-emerald">
-                  You don't get 9 years of zero defaults by accident. You get it by rejecting 98% of what the 'smart money' calls opportunities.
+              <div className="bg-emerald/10 border border-emerald/20 p-6 lg:p-8 rounded-xl">
+                <p className="text-base lg:text-lg font-semibold text-emerald">
+                  9 years of zero defaults. AI that rejects 98% of what 'smart money' calls opportunities.
                 </p>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 21-Parameter Fund Filter */}
+        {/* AI Logic Timeline/Flowchart */}
         <section className="space-premium">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-title font-bold text-primary mb-6">
-                The 21-Parameter Fund Filter
+          <div className="max-w-7xl mx-auto px-4 lg:px-8">
+            <div className="text-center mb-12 lg:mb-16">
+              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
+                Backend AI Logic & Safety Nets
               </h2>
-              <p className="text-xl text-muted-foreground">
-                Every fund in our system survives three brutal filters:
+              <p className="text-base lg:text-xl text-gray-400">
+                Visualized: How AI protects and grows your capital through three critical filters
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-3 gap-8">
-              {/* Crisis-Proof DNA */}
-              <div className="exclusive-card p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <Shield className="text-emerald" size={24} />
-                  <h3 className="text-xl font-bold text-foreground">Crisis-Proof DNA</h3>
-                </div>
-                
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Must have weathered 2018 NBFC crash + 2020 pandemic</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>12-month liquidity stress tests at 2x normal withdrawal rates</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>We rejected 37 "high-return" funds last year for hidden single-point failures your banker wouldn't notice</span>
-                  </li>
-                </ul>
+            {/* Animated Flow */}
+            <div className="relative">
+              {/* Flow Lines */}
+              <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                <div className="w-full h-px bg-gradient-to-r from-transparent via-emerald/30 to-transparent animate-pulse"></div>
               </div>
-
-              {/* Skin-in-the-Game Mandate */}
-              <div className="exclusive-card p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <Lock className="text-emerald" size={24} />
-                  <h3 className="text-xl font-bold text-foreground">Skin-in-the-Game Mandate</h3>
+              
+              <div className="grid lg:grid-cols-3 gap-6 lg:gap-8 relative z-10">
+                {/* Filter 1 */}
+                <div className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 p-6 lg:p-8 transition-all duration-700">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 bg-emerald/10 rounded-lg">
+                      <Shield className="text-emerald" size={20} />
+                    </div>
+                    <div className="live-indicator text-xs">
+                      <Activity className="w-3 h-3" />
+                      Active
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-lg lg:text-xl font-bold text-white mb-4">Crisis-Proof DNA</h3>
+                  
+                  <ul className="space-y-3 text-gray-300 text-sm lg:text-base">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>Survived 2018 NBFC + 2020 pandemic</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>2x liquidity stress tests</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>37 funds rejected in 2024</span>
+                    </li>
+                  </ul>
+                  
+                  <div className="mt-6 p-3 bg-emerald/10 rounded-lg">
+                    <div className="text-emerald font-bold text-sm">98% Rejection Rate</div>
+                    <div className="text-gray-400 text-xs">Only crisis-tested funds pass</div>
+                  </div>
                 </div>
-                
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Fund principals must invest minimum 15% personal wealth</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Personal net worth audits every 6 months</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>No anonymous managers - only accountable partners</span>
-                  </li>
-                </ul>
+
+                {/* Filter 2 */}
+                <div className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 p-6 lg:p-8 transition-all duration-700">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 bg-emerald/10 rounded-lg">
+                      <Lock className="text-emerald" size={20} />
+                    </div>
+                    <div className="live-indicator text-xs">
+                      <Activity className="w-3 h-3" />
+                      Active
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-lg lg:text-xl font-bold text-white mb-4">Skin-in-Game Mandate</h3>
+                  
+                  <ul className="space-y-3 text-gray-300 text-sm lg:text-base">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>15% personal wealth minimum</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>6-month net worth audits</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>Zero anonymous managers</span>
+                    </li>
+                  </ul>
+                  
+                  <div className="mt-6 p-3 bg-emerald/10 rounded-lg">
+                    <div className="text-emerald font-bold text-sm">100% Accountability</div>
+                    <div className="text-gray-400 text-xs">Managers risk their own money</div>
+                  </div>
+                </div>
+
+                {/* Filter 3 */}
+                <div className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 p-6 lg:p-8 transition-all duration-700">
+                  <div className="flex items-center gap-3 mb-6">
+                    <div className="p-3 bg-emerald/10 rounded-lg">
+                      <Brain className="text-emerald" size={20} />
+                    </div>
+                    <div className="live-indicator text-xs">
+                      <Activity className="w-3 h-3" />
+                      Active
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-lg lg:text-xl font-bold text-white mb-4">AI Liquidity Engine</h3>
+                  
+                  <ul className="space-y-3 text-gray-300 text-sm lg:text-base">
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>Real-time redemption tracking</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>0.5% distress threshold</span>
+                    </li>
+                    <li className="flex items-start gap-3">
+                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                      <span>89% crisis prevention rate</span>
+                    </li>
+                  </ul>
+                  
+                  <div className="mt-6 p-3 bg-emerald/10 rounded-lg">
+                    <div className="text-emerald font-bold text-sm">24/7 Monitoring</div>
+                    <div className="text-gray-400 text-xs">AI predicts problems early</div>
+                  </div>
+                </div>
               </div>
+            </div>
 
-              {/* AI-Powered Liquidity Scans */}
-              <div className="exclusive-card p-8">
-                <div className="flex items-center gap-3 mb-6">
-                  <Brain className="text-emerald" size={24} />
-                  <h3 className="text-xl font-bold text-foreground">AI-Powered Liquidity Scans</h3>
-                </div>
+            {/* Payout Triggers */}
+            <div className="mt-12 lg:mt-16">
+              <div className="dashboard-tile bg-gray-900/30 border border-emerald/10 p-6 lg:p-8">
+                <h3 className="text-xl lg:text-2xl font-bold text-emerald mb-6 text-center">Automated Payout Triggers</h3>
                 
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Our systems track real-time redemption capacity</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Auto-flags funds showing early distress patterns (0.5% threshold)</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Prevents 89% of liquidity crunches before they occur</span>
-                  </li>
-                </ul>
+                <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+                  <div className="text-center p-4 bg-emerald/10 rounded-lg">
+                    <div className="text-lg font-bold text-emerald">18M</div>
+                    <div className="text-xs text-gray-400">First liquidity window opens</div>
+                  </div>
+                  <div className="text-center p-4 bg-emerald/10 rounded-lg">
+                    <div className="text-lg font-bold text-emerald">24M</div>
+                    <div className="text-xs text-gray-400">Full exit readiness</div>
+                  </div>
+                  <div className="text-center p-4 bg-gold/10 rounded-lg">
+                    <div className="text-lg font-bold text-gold">+1.5%</div>
+                    <div className="text-xs text-gray-400">Renewal bonus rate</div>
+                  </div>
+                  <div className="text-center p-4 bg-emerald/10 rounded-lg">
+                    <div className="text-lg font-bold text-emerald">72%</div>
+                    <div className="text-xs text-gray-400">Members renew</div>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
