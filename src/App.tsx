@@ -4,6 +4,7 @@ import { TooltipProvider } from "@/components/ui/tooltip";
 import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import FloatingCTA from "@/components/FloatingCTA";
+import ScrollIndicator from "@/components/ScrollIndicator";
 import Index from "./pages/Index";
 import NotFound from "./pages/NotFound";
 import Tiers from "./pages/Tiers";
@@ -25,6 +26,7 @@ const App = () => (
       <Toaster />
       <Sonner />
       <BrowserRouter>
+        <ScrollIndicator />
         <Routes>
           <Route path="/" element={<Index />} />
           <Route path="/tiers" element={<Tiers />} />

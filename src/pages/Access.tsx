@@ -45,15 +45,24 @@ const Access = () => {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="space-premium bg-subtle">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center max-w-4xl mx-auto">
-              <h1 className="text-title font-bold text-primary mb-6">
-                The Selection Process
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed">
-                This isn't an investment. It's an upgrade path for your entire wealth strategy.
-              </p>
+         <section className="space-premium bg-black">
+           <div className="max-w-7xl mx-auto px-6 lg:px-8">
+             <div className="text-center max-w-4xl mx-auto">
+               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-8">
+                 <Lock className="w-4 h-4" />
+                 Exclusive Access Protocol
+               </div>
+               
+               <h1 className="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight">
+                 THE SELECTION
+                 <br />
+                 <span className="bg-gradient-to-r from-emerald via-gold to-emerald bg-clip-text text-transparent">
+                   PROCESS
+                 </span>
+               </h1>
+               <p className="text-xl text-gray-300 leading-relaxed">
+                 This isn't an investment. It's an upgrade path for your entire wealth strategy.
+               </p>
               
               <div className="mt-12 p-6 bg-emerald/10 rounded-lg">
                 <p className="text-lg font-semibold text-emerald">

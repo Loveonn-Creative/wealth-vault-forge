@@ -9,21 +9,26 @@ const Research = () => {
       
       <main className="pt-20">
         {/* Hero Section */}
-        <section className="space-premium">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <div className="live-indicator mb-6">
-                Research Engine Active
-              </div>
-              <h1 className="text-title font-bold text-foreground mb-6">
-                Market Intelligence Laboratory
-              </h1>
-              <p className="text-xl text-muted-foreground leading-relaxed max-w-3xl mx-auto">
-                AI-powered research engine analyzing private capital markets across 47 data streams
-              </p>
-            </div>
-          </div>
-        </section>
+         <section className="space-premium bg-black">
+           <div className="max-w-7xl mx-auto px-6 lg:px-8">
+             <div className="text-center mb-16">
+               <div className="inline-flex items-center gap-2 px-4 py-2 bg-emerald/10 border border-emerald/20 rounded-full text-emerald text-sm font-medium mb-6">
+                 <Database className="w-4 h-4 animate-pulse" />
+                 Research Engine Active
+               </div>
+               <h1 className="text-4xl lg:text-6xl font-black text-white mb-6 leading-tight">
+                 MARKET INTELLIGENCE
+                 <br />
+                 <span className="bg-gradient-to-r from-emerald via-gold to-emerald bg-clip-text text-transparent">
+                   LABORATORY
+                 </span>
+               </h1>
+               <p className="text-xl text-gray-300 leading-relaxed max-w-3xl mx-auto">
+                 AI-powered research engine analyzing private capital markets across 847 data streams
+               </p>
+             </div>
+           </div>
+         </section>
 
         {/* Portfolio Gap Analysis */}
         <section className="space-premium bg-muted/10">
