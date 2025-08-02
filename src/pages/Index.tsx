@@ -53,7 +53,7 @@ const Index = () => {
                  <div className="w-3 h-3 bg-emerald rounded-full animate-pulse shadow-emerald shadow-lg"></div>
                  <span className="hidden sm:inline">AI WEALTH ENGINE LIVE</span>
                  <span className="sm:hidden">AI ENGINE LIVE</span>
-                 <span className="text-xs lg:text-sm">• ₹847CR UNDER MANAGEMENT</span>
+                 <span className="text-xs lg:text-sm">• ₹1B BY 2026/27</span>
                </div>
             </div>
 
@@ -65,7 +65,7 @@ const Index = () => {
                   WEALTH ENGINE
                 </span>
                 <span className="block text-2xl sm:text-3xl lg:text-4xl text-emerald font-medium mt-4">
-                  BUILT FOR THE MIDDLE CLASS
+                  FOR SERIOUS INVESTORS
                 </span>
               </h1>
             </div>
@@ -284,7 +284,7 @@ const Index = () => {
               {[
                 { metric: "15-23%", label: "Returns", icon: TrendingUp },
                 { metric: "Zero", label: "Defaults", icon: Shield },
-                { metric: "₹847Cr", label: "Under Mgmt", icon: BarChart3 }
+                { metric: "₹1B Target", label: "By 2026/27", icon: BarChart3 }
               ].map((stat, index) => (
                 <div key={index} className="dashboard-tile bg-gray-900/30 border border-emerald/10 p-4 lg:p-6 text-center">
                   <div className="flex items-center justify-center mb-3">

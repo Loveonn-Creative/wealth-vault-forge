@@ -59,14 +59,14 @@ const Tiers = () => {
                           <div className="text-lg lg:text-xl font-bold text-emerald">8-12%</div>
                           <div className="text-xs text-gray-400">Expected ROI</div>
                         </div>
-                        <div className="text-center p-3 bg-gray-800/50 rounded-lg">
-                          <div className="text-lg lg:text-xl font-bold text-white">35%</div>
-                          <div className="text-xs text-gray-400">Holding %</div>
-                        </div>
-                        <div className="text-center p-3 bg-gray-800/50 rounded-lg">
-                          <div className="text-lg lg:text-xl font-bold text-white">Low</div>
-                          <div className="text-xs text-gray-400">Risk Level</div>
-                        </div>
+                         <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                           <div className="text-lg lg:text-xl font-bold text-white">35%</div>
+                           <div className="text-xs text-gray-400">Holding %</div>
+                         </div>
+                         <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                           <div className="text-lg lg:text-xl font-bold text-white">Low</div>
+                           <div className="text-xs text-gray-400">Risk Level</div>
+                         </div>
                         <div className="text-center p-3 bg-gold/10 rounded-lg">
                           <div className="text-lg lg:text-xl font-bold text-gold">24M</div>
                           <div className="text-xs text-gray-400">Lock-in</div>
@@ -131,7 +131,29 @@ const Tiers = () => {
                     </div>
                     
                     <div className="space-y-6">
-                      <div className="text-4xl font-bold text-primary">11-18% Returns</div>
+                       <div className="space-y-4">
+                         <div className="text-4xl font-bold text-primary">11-18% Returns</div>
+                         
+                         {/* Momentum Block Metrics */}
+                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                           <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-emerald">11-18%</div>
+                             <div className="text-xs text-gray-400">Expected ROI</div>
+                           </div>
+                           <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-white">52%</div>
+                             <div className="text-xs text-gray-400">Holding %</div>
+                           </div>
+                           <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-white">Med</div>
+                             <div className="text-xs text-gray-400">Risk Level</div>
+                           </div>
+                           <div className="text-center p-3 bg-gold/10 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-gold">24M</div>
+                             <div className="text-xs text-gray-400">Lock-in</div>
+                           </div>
+                         </div>
+                       </div>
                       
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">
@@ -182,7 +204,29 @@ const Tiers = () => {
                     </div>
                     
                     <div className="space-y-6">
-                      <div className="text-4xl font-bold text-primary">15-23% Returns</div>
+                       <div className="space-y-4">
+                         <div className="text-4xl font-bold text-primary">15-23% Returns</div>
+                         
+                         {/* Legacy Block Metrics */}
+                         <div className="grid grid-cols-2 lg:grid-cols-4 gap-4">
+                           <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-emerald">15-23%</div>
+                             <div className="text-xs text-gray-400">Expected ROI</div>
+                           </div>
+                           <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-white">78%</div>
+                             <div className="text-xs text-gray-400">Holding %</div>
+                           </div>
+                           <div className="text-center p-3 bg-gray-800/50 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-white">Elite</div>
+                             <div className="text-xs text-gray-400">Risk Level</div>
+                           </div>
+                           <div className="text-center p-3 bg-gold/10 rounded-lg">
+                             <div className="text-lg lg:text-xl font-bold text-gold">24M</div>
+                             <div className="text-xs text-gray-400">Lock-in</div>
+                           </div>
+                         </div>
+                       </div>
                       
                       <ul className="space-y-3 text-muted-foreground">
                         <li className="flex items-start gap-3">

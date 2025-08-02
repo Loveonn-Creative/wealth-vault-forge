@@ -199,44 +199,119 @@ const Architecture = () => {
               </p>
             </div>
 
-            <div className="grid lg:grid-cols-2 gap-12">
-              {/* Phase 1 */}
-              <div className="exclusive-card p-8">
-                <h3 className="text-2xl font-bold text-emerald mb-4">Phase 1 (0-18 Months)</h3>
-                <ul className="space-y-3 text-muted-foreground">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Capital deployed in high-conviction opportunities</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>AI enforces 15% exposure caps per fund</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>6-month systematic liquidation</span>
-                  </li>
-                </ul>
+            <div className="space-y-8">
+              {/* Phase 1 - Enhanced Design */}
+              <div className="dashboard-tile bg-gray-900/50 border border-emerald/20 p-8 lg:p-12">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                  <div>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="p-3 bg-emerald/10 rounded-lg">
+                        <div className="w-6 h-6 bg-emerald rounded-full animate-pulse"></div>
+                      </div>
+                      <div className="live-indicator text-sm">
+                        <Activity className="w-3 h-3" />
+                        Phase 1 Active
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 1 (0-18 Months)</h3>
+                    <p className="text-base lg:text-lg text-gray-300 mb-6">Capital Deployment & High-Conviction Allocation</p>
+                    
+                    <ul className="space-y-4 text-gray-300">
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">Capital deployed in high-conviction opportunities</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">AI enforces 15% exposure caps per fund</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">6-month systematic liquidation</span>
+                      </li>
+                    </ul>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
+                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 1 Metrics</h4>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                        <div className="text-lg font-bold text-emerald">15%</div>
+                        <div className="text-xs text-gray-400">Max Exposure</div>
+                      </div>
+                      <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                        <div className="text-lg font-bold text-emerald">18M</div>
+                        <div className="text-xs text-gray-400">Duration</div>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-emerald/5 rounded-lg">
+                      <p className="text-emerald font-medium text-sm">High-conviction deployment phase with systematic risk controls</p>
+                    </div>
+                  </div>
+                </div>
               </div>
 
-              {/* Phase 2 */}
-              <div className="exclusive-card p-8">
-                <h3 className="text-2xl font-bold text-emerald mb-4">Phase 2 (19-24 Months)</h3>
-                <ul className="space-y-3 text-muted-foreground mb-6">
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Systematic shift to liquid instruments</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Prepares for your choice:</span>
-                  </li>
-                </ul>
-                
-                <div className="bg-steel-light/30 p-4 rounded-lg space-y-2">
-                  <p className="text-emerald font-semibold">• Withdraw (Full liquidity)</p>
-                  <p className="text-emerald font-semibold">• Auto-Renew (Next cycle at +1.5% preferential rate)</p>
-                  <p className="text-emerald font-semibold">• Upsize (Seamless tier upgrade)</p>
+              {/* Phase 2 - Enhanced Design */}
+              <div className="dashboard-tile bg-gray-900/50 border border-emerald/20 p-8 lg:p-12">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                  <div>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="p-3 bg-emerald/10 rounded-lg">
+                        <div className="w-6 h-6 bg-gold rounded-full animate-pulse"></div>
+                      </div>
+                      <div className="live-indicator text-sm">
+                        <Activity className="w-3 h-3" />
+                        Phase 2 Ready
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 2 (19-24 Months)</h3>
+                    <p className="text-base lg:text-lg text-gray-300 mb-6">Liquidity Preparation & Exit Optimization</p>
+                    
+                    <ul className="space-y-4 text-gray-300 mb-6">
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">Systematic shift to liquid instruments</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">Prepares for your choice:</span>
+                      </li>
+                    </ul>
+                    
+                    <div className="bg-gray-800/50 p-4 rounded-lg space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full"></div>
+                        <span className="text-emerald font-semibold text-sm">Withdraw (Full liquidity)</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full"></div>
+                        <span className="text-emerald font-semibold text-sm">Auto-Renew (Next cycle at +1.5% preferential rate)</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full"></div>
+                        <span className="text-emerald font-semibold text-sm">Upsize (Seamless tier upgrade)</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-gold/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
+                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 2 Metrics</h4>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="text-center p-3 bg-gold/10 rounded-lg">
+                        <div className="text-lg font-bold text-gold">72%</div>
+                        <div className="text-xs text-gray-400">Renew Rate</div>
+                      </div>
+                      <div className="text-center p-3 bg-gold/10 rounded-lg">
+                        <div className="text-lg font-bold text-gold">6M</div>
+                        <div className="text-xs text-gray-400">Duration</div>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-gold/5 rounded-lg">
+                      <p className="text-gold font-medium text-sm">Liquidity optimization with flexible exit strategies</p>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>

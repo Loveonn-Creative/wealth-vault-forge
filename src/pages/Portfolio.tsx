@@ -224,8 +224,8 @@ const Portfolio = () => {
                   Compare your performance against the entire Wealth Blocks ecosystem
                 </p>
                 <div className="flex justify-center items-center gap-4">
-                  <button className="px-4 py-2 bg-emerald/20 text-emerald rounded-lg text-sm">Personal View</button>
-                  <button className="px-4 py-2 bg-gray-800/50 text-gray-400 rounded-lg text-sm hover:bg-gray-700/50">Overall Portfolio</button>
+                  <a href="/insights" className="px-4 py-2 bg-emerald/20 text-emerald rounded-lg text-sm hover:bg-emerald/30 transition-all">Personal View</a>
+                  <a href="/research" className="px-4 py-2 bg-gray-800/50 text-gray-400 rounded-lg text-sm hover:bg-gray-700/50 transition-all">Overall Portfolio</a>
                 </div>
               </div>
             </div>

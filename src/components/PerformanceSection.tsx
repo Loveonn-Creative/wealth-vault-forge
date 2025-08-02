@@ -12,8 +12,8 @@ const PerformanceSection = () => {
     {
       icon: BarChart3,
       label: 'Capital Deployed',
-      value: '₹847Cr',
-      period: 'Across 34 opportunities',
+      value: '₹1B Target',
+      period: 'By 2026/27',
       trend: '+12.8%'
     },
     {
