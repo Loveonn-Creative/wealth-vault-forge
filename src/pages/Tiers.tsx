@@ -294,40 +294,40 @@ const Tiers = () => {
                 </thead>
                 <tbody className="space-y-4">
                   <tr className="border-b border-border/50">
-                    <td className="py-4">Fixed Deposits</td>
-                    <td className="py-4 text-muted-foreground">4-6%</td>
-                    <td className="py-4 text-muted-foreground">1-5 years</td>
+                    <td className="py-4 text-white">Fixed Deposits</td>
+                    <td className="py-4 text-gray-300">4-6%</td>
+                    <td className="py-4 text-gray-300">1-5 years</td>
                     <td className="py-4 font-semibold text-emerald">Prime Block</td>
                     <td className="py-4 font-semibold text-emerald">8-12%</td>
                     <td className="py-4 font-semibold text-emerald">24 months</td>
                   </tr>
                   <tr className="border-b border-border/50">
-                    <td className="py-4">PMS Schemes</td>
-                    <td className="py-4 text-muted-foreground">10-12%</td>
-                    <td className="py-4 text-muted-foreground">1 year+</td>
+                    <td className="py-4 text-white">PMS Schemes</td>
+                    <td className="py-4 text-gray-300">10-12%</td>
+                    <td className="py-4 text-gray-300">1 year+</td>
                     <td className="py-4 font-semibold text-emerald">Momentum Block</td>
                     <td className="py-4 font-semibold text-emerald">11-18%</td>
                     <td className="py-4 font-semibold text-emerald">24 months</td>
                   </tr>
                   <tr className="border-b border-border/50">
-                    <td className="py-4">AIFs</td>
-                    <td className="py-4 text-muted-foreground">14-16%</td>
-                    <td className="py-4 text-muted-foreground">3+ years</td>
+                    <td className="py-4 text-white">AIFs</td>
+                    <td className="py-4 text-gray-300">14-16%</td>
+                    <td className="py-4 text-gray-300">3+ years</td>
                     <td className="py-4 font-semibold text-emerald">Legacy Block</td>
                     <td className="py-4 font-semibold text-emerald">15-23%</td>
                     <td className="py-4 font-semibold text-emerald">24 months</td>
                   </tr>
                   <tr className="border-b border-border/50">
-                    <td className="py-4">Real Estate</td>
-                    <td className="py-4 text-muted-foreground">7-9%</td>
-                    <td className="py-4 text-muted-foreground">3-7 years</td>
+                    <td className="py-4 text-white">Real Estate</td>
+                    <td className="py-4 text-gray-300">7-9%</td>
+                    <td className="py-4 text-gray-300">3-7 years</td>
                     <td className="py-4 font-semibold text-emerald">Legacy Block</td>
                     <td className="py-4 font-semibold text-emerald">15-23%</td>
                     <td className="py-4 font-semibold text-emerald">24 months</td>
                   </tr>
                   <tr>
-                    <td className="py-4">Mutual Funds</td>
-                    <td className="py-4 text-muted-foreground">9-11%</td>
+                    <td className="py-4 text-white">Mutual Funds</td>
+                    <td className="py-4 text-gray-300">9-11%</td>
                     <td className="py-4 text-muted-foreground">Exit loads</td>
                     <td className="py-4 font-semibold text-emerald">Momentum Block</td>
                     <td className="py-4 font-semibold text-emerald">11-18%</td>

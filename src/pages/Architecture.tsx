@@ -187,14 +187,17 @@ const Architecture = () => {
           </div>
         </section>
 
-        {/* 24-Month Capital Algorithm - Phase 2 & 3 */}
+        {/* 24-Month Capital Algorithm */}
         <section className="space-premium bg-gray-900/20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
               <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
-                24-Month Capital Algorithm - Phase 2 & 3
+                The 24-Month Capital Algorithm
               </h2>
               <p className="text-xl text-gray-300">
+                How Wealth Blocks Turns Time Into Compound Leverage With AI
+              </p>
+              <p className="text-lg text-gray-400 mt-4">
                 Your 24-month horizon isn't a lock-in - it's a strategic advantage:
               </p>
             </div>
@@ -214,39 +217,39 @@ const Architecture = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 2 (0-18 Months)</h3>
-                    <p className="text-base lg:text-lg text-gray-300 mb-6">Capital Deployment & High-Conviction Allocation</p>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 1: Capital Deployment (Months 0-3)</h3>
+                    <p className="text-base lg:text-lg text-gray-300 mb-6">Initial Allocation & Risk Assessment</p>
                     
                     <ul className="space-y-4 text-gray-300">
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                        <span className="text-sm lg:text-base">Capital deployed in high-conviction opportunities</span>
+                        <span className="text-sm lg:text-base">Initial capital deployment across vetted funds</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                        <span className="text-sm lg:text-base">AI enforces 15% exposure caps per fund</span>
+                        <span className="text-sm lg:text-base">AI risk profiling and allocation optimization</span>
                       </li>
                       <li className="flex items-start gap-3">
                         <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                        <span className="text-sm lg:text-base">6-month systematic liquidation</span>
+                        <span className="text-sm lg:text-base">Foundation setting for 24-month cycle</span>
                       </li>
                     </ul>
                   </div>
                   
                   <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
-                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 2 Metrics</h4>
+                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 1 Metrics</h4>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="text-center p-3 bg-emerald/10 rounded-lg">
-                        <div className="text-lg font-bold text-emerald">15%</div>
-                        <div className="text-xs text-gray-400">Max Exposure</div>
+                        <div className="text-lg font-bold text-emerald">100%</div>
+                        <div className="text-xs text-gray-400">Capital Deployed</div>
                       </div>
                       <div className="text-center p-3 bg-emerald/10 rounded-lg">
-                        <div className="text-lg font-bold text-emerald">18M</div>
+                        <div className="text-lg font-bold text-emerald">3M</div>
                         <div className="text-xs text-gray-400">Duration</div>
                       </div>
                     </div>
                     <div className="p-4 bg-emerald/5 rounded-lg">
-                      <p className="text-emerald font-medium text-sm">High-conviction deployment phase with systematic risk controls</p>
+                      <p className="text-emerald font-medium text-sm">Initial deployment phase with AI-optimized allocation</p>
                     </div>
                   </div>
                 </div>
@@ -262,11 +265,78 @@ const Architecture = () => {
                       </div>
                       <div className="live-indicator text-sm">
                         <Activity className="w-3 h-3" />
+                        Phase 2 Active
+                      </div>
+                    </div>
+                    
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 2: Dynamic Harvest Cycle (Months 4-18)</h3>
+                    <p className="text-base lg:text-lg text-gray-300 mb-6">Active Management & Performance Optimization</p>
+                    
+                    <ul className="space-y-4 text-gray-300 mb-6">
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">Continuous portfolio rebalancing and optimization</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">AI-driven performance harvesting across cycles</span>
+                      </li>
+                      <li className="flex items-start gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
+                        <span className="text-sm lg:text-base">Dynamic risk management and opportunity capture</span>
+                      </li>
+                    </ul>
+                    
+                    <div className="bg-gray-800/50 p-4 rounded-lg space-y-3">
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full"></div>
+                        <span className="text-emerald font-semibold text-sm">Continuous monitoring and optimization</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full"></div>
+                        <span className="text-emerald font-semibold text-sm">Performance harvesting across market cycles</span>
+                      </div>
+                      <div className="flex items-center gap-3">
+                        <div className="w-2 h-2 bg-emerald rounded-full"></div>
+                        <span className="text-emerald font-semibold text-sm">Risk-adjusted return optimization</span>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
+                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 2 Metrics</h4>
+                    <div className="grid grid-cols-2 gap-4 mb-6">
+                      <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                        <div className="text-lg font-bold text-emerald">15%</div>
+                        <div className="text-xs text-gray-400">Max Fund Exposure</div>
+                      </div>
+                      <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                        <div className="text-lg font-bold text-emerald">15M</div>
+                        <div className="text-xs text-gray-400">Duration</div>
+                      </div>
+                    </div>
+                    <div className="p-4 bg-emerald/5 rounded-lg">
+                      <p className="text-emerald font-medium text-sm">Active management phase with systematic performance harvesting</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              {/* Phase 3 - Enhanced Design */}
+              <div className="dashboard-tile bg-gray-900/50 border border-emerald/20 p-8 lg:p-12">
+                <div className="grid lg:grid-cols-2 gap-8 lg:gap-12 items-center">
+                  <div>
+                    <div className="flex items-center gap-3 mb-6">
+                      <div className="p-3 bg-emerald/10 rounded-lg">
+                        <div className="w-6 h-6 bg-emerald rounded-full animate-pulse"></div>
+                      </div>
+                      <div className="live-indicator text-sm">
+                        <Activity className="w-3 h-3" />
                         Phase 3 Ready
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 3 (19-24 Months)</h3>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 3: Liquidity Orchestration (Months 19-24)</h3>
                     <p className="text-base lg:text-lg text-gray-300 mb-6">Liquidity Preparation & Exit Optimization</p>
                     
                     <ul className="space-y-4 text-gray-300 mb-6">
@@ -339,161 +409,69 @@ const Architecture = () => {
               </p>
             </div>
 
-            <div className="exclusive-card p-12">
-              <h3 className="text-2xl font-bold text-emerald mb-8 text-center">What happens when markets turn:</h3>
-              
-              <div className="grid lg:grid-cols-2 gap-12">
-                {/* AI-Triggered Circuit Breakers */}
-                <div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">AI-Triggered Circuit Breakers</h4>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                      <span>Triggers at 0.5% distress signals (vs. 2% industry standard)</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                      <span>Automatic rotation to defensive positions</span>
-                    </li>
-                  <li className="flex items-start gap-3">
-                    <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                    <span>Real-time exposure caps (no fund gets {'>'}15% of your capital)</span>
-                  </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                      <span>Circuit breakers that fire 3x faster than human fund managers</span>
-                    </li>
+            <div className="grid lg:grid-cols-3 gap-8 mb-16">
+              <div className="dashboard-tile p-8">
+                <div className="text-center mb-6">
+                  <div className="text-3xl font-bold text-primary">18%</div>
+                  <div className="text-muted-foreground">Early Warning Trigger</div>
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  If any fund hits 18% loss, AI auto-liquidates and redistributes to top performers
+                </p>
+              </div>
+
+              <div className="dashboard-tile p-8">
+                <div className="text-center mb-6">
+                  <div className="text-3xl font-bold text-primary">72%</div>
+                  <div className="text-muted-foreground">Renewal Rate</div>
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  Members don't just stay - they upgrade tiers after seeing 24-month results
+                </p>
+              </div>
+
+              <div className="dashboard-tile p-8">
+                <div className="text-center mb-6">
+                  <div className="text-3xl font-bold text-primary">+1.5%</div>
+                  <div className="text-muted-foreground">Loyalty Premium</div>
+                </div>
+                <p className="text-sm text-muted-foreground text-center">
+                  Renewal members get preferential rates - the system rewards patience
+                </p>
+              </div>
+            </div>
+
+            <div className="exclusive-card p-8 text-center">
+              <h3 className="text-2xl font-bold text-primary mb-4">The Compound Effect</h3>
+              <p className="text-lg text-muted-foreground mb-6">
+                Traditional investors chase quarterly returns. Smart capital builds 24-month strategic positions.
+              </p>
+              <div className="grid md:grid-cols-2 gap-6">
+                <div className="p-4 bg-steel-light/10 rounded-lg">
+                  <div className="text-xl font-bold text-destructive mb-2">Traditional Approach</div>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• Quarterly performance anxiety</li>
+                    <li>• Exit penalties and lock-ins</li>
+                    <li>• No strategic time horizon</li>
+                    <li>• Emotional decision making</li>
                   </ul>
                 </div>
-
-                {/* Capital Memory System */}
-                <div>
-                  <h4 className="text-xl font-semibold text-foreground mb-4">Capital Memory System</h4>
-                  <ul className="space-y-3 text-muted-foreground">
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                      <span>AI rebalances to recover losses 37% faster than manual funds</span>
-                    </li>
-                    <li className="flex items-start gap-3">
-                      <div className="w-2 h-2 bg-emerald rounded-full mt-2"></div>
-                      <span>Your ₹10L here outperforms ₹15L in PMS during downturns</span>
-                    </li>
+                <div className="p-4 bg-emerald/10 rounded-lg">
+                  <div className="text-xl font-bold text-emerald mb-2">Wealth Blocks Method</div>
+                  <ul className="text-sm text-muted-foreground space-y-1">
+                    <li>• 24-month strategic horizon</li>
+                    <li>• Mechanical rebalancing</li>
+                    <li>• Compound-friendly structure</li>
+                    <li>• AI removes emotions</li>
                   </ul>
-                  
-                  <div className="bg-emerald/10 p-4 rounded-lg mt-6">
-                    <p className="text-emerald font-semibold">Our AI Sentry System doesn't just allocate—it protects.</p>
-                  </div>
                 </div>
               </div>
             </div>
           </div>
         </section>
 
-        {/* 24-Month Capital Algorithm */}
-        <section className="space-premium bg-steel-light/10">
-          <div className="max-w-7xl mx-auto px-6 lg:px-8">
-            <div className="text-center mb-16">
-              <h2 className="text-title font-bold text-primary mb-6">
-                The 24-Month Capital Algorithm
-              </h2>
-              <p className="text-xl text-muted-foreground">
-                How Wealth Blocks Turns Time Into Compound Leverage With AI
-              </p>
-            </div>
-
-            <div className="space-y-12">
-              {/* Phase 1: Intelligent Deployment */}
-              <div className="exclusive-card p-8">
-                <h3 className="text-2xl font-bold text-emerald mb-6">Phase 1: Intelligent Deployment (Days 0-90)</h3>
-                <p className="text-lg text-muted-foreground mb-6">Your capital undergoes institutional-grade structuring:</p>
-                
-                <div className="grid lg:grid-cols-3 gap-6">
-                  <div className="bg-steel-light/30 p-4 rounded-lg">
-                    <h4 className="font-semibold text-foreground mb-2">60% Core Engine</h4>
-                    <p className="text-sm text-muted-foreground">Private credit instruments (asset-backed, covenant-heavy) generating 8-12% via contractual cashflows</p>
-                  </div>
-                  
-                  <div className="bg-steel-light/30 p-4 rounded-lg">
-                    <h4 className="font-semibold text-foreground mb-2">30% Alpha Layer</h4>
-                    <p className="text-sm text-muted-foreground">Pre-IPO equity allocations with waterfall return structures (15-20% IRR)</p>
-                  </div>
-                  
-                  <div className="bg-steel-light/30 p-4 rounded-lg">
-                    <h4 className="font-semibold text-foreground mb-2">10% Liquidity Mesh</h4>
-                    <p className="text-sm text-muted-foreground">Automated treasury bills ladder + arbitrage sleeve (4-6% yield)</p>
-                  </div>
-                </div>
-                
-                <div className="bg-emerald/10 p-4 rounded-lg mt-6">
-                  <p className="text-emerald font-semibold">Key Difference: Traditional investments park money. We activate it.</p>
-                </div>
-              </div>
-
-              {/* Phase 2: Dynamic Harvest Cycle */}
-              <div className="exclusive-card p-8">
-                <h3 className="text-2xl font-bold text-emerald mb-6">Phase 2: Dynamic Harvest Cycle (Months 4-18)</h3>
-                <p className="text-lg text-muted-foreground mb-6">Our AI executes what human fund managers can't:</p>
-                
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">→ Cashflow Stripping</h4>
-                    <p className="text-muted-foreground mb-2">Extracts interest/dividends without selling assets (zero capital gains triggers)</p>
-                    <p className="text-sm text-emerald">Example: ₹50L in venture debt yields ₹3.2L/year while preserving principal</p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">→ Volatility Siphoning</h4>
-                    <p className="text-muted-foreground">Redirects 22% of market downturn losses into defensive puts (paid from growth-layer profits)</p>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">→ Reinvestment Triggers</h4>
-                    <p className="text-muted-foreground">Compounds gains only when:</p>
-                    <ul className="text-sm text-muted-foreground mt-2 space-y-1">
-                      <li>• Sharpe ratio {'>'}1.5</li>
-                      <li>• Drawdown risk {'<'}3% next quarter</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-
-              {/* Phase 3: Liquidity Orchestration */}
-              <div className="exclusive-card p-8">
-                <h3 className="text-2xl font-bold text-emerald mb-6">Phase 3: Liquidity Orchestration (Months 19-24)</h3>
-                <p className="text-lg text-muted-foreground mb-6">Preparing your exit like private equity funds do:</p>
-                
-                <div className="space-y-6">
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">→ Gradual Unwinding</h4>
-                    <p className="text-muted-foreground">Sells 15% monthly from growth assets into:</p>
-                    <ul className="text-sm text-muted-foreground mt-2 space-y-1">
-                      <li>• AAA-rated commercial paper (5.2-6.1% yield)</li>
-                      <li>• Pre-funded buyback agreements with partner banks</li>
-                    </ul>
-                  </div>
-                  
-                  <div>
-                    <h4 className="font-semibold text-foreground mb-2">→ Tax Engineering</h4>
-                    <p className="text-muted-foreground">Tags every sale with applicable LTCG/STCG buckets</p>
-                    <p className="text-muted-foreground">Auto-generates audit-ready holding period reports</p>
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            <div className="text-center mt-12">
-              <p className="text-lg text-emerald font-semibold mb-4">
-                Real-World Output: ₹1Cr in Momentum Block = ₹13.2L earned while maintaining exit readiness vs. ₹6L in FDs.
-              </p>
-              
-              <p className="text-2xl font-bold text-primary">
-                We turn 24 months into a strategic advantage. This isn't parking money. It's programming wealth.
-              </p>
-            </div>
-          </div>
-        </section>
       </main>
-      
+
       <Footer />
     </div>
   );
