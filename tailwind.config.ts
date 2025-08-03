@@ -58,6 +58,11 @@ export default {
 					foreground: 'hsl(var(--emerald-foreground))',
 					muted: 'hsl(var(--emerald-muted))'
 				},
+				gold: {
+					DEFAULT: 'hsl(var(--gold))',
+					foreground: 'hsl(var(--gold-foreground))',
+					muted: 'hsl(var(--gold-muted))'
+				},
 				steel: {
 					DEFAULT: 'hsl(var(--steel))',
 					dark: 'hsl(var(--steel-dark))',

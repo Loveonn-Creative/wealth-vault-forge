@@ -187,14 +187,14 @@ const Architecture = () => {
           </div>
         </section>
 
-        {/* Liquidity Engineering */}
-        <section className="space-premium bg-steel-light/10">
+        {/* 24-Month Capital Algorithm - Phase 2 & 3 */}
+        <section className="space-premium bg-gray-900/20">
           <div className="max-w-7xl mx-auto px-6 lg:px-8">
             <div className="text-center mb-16">
-              <h2 className="text-title font-bold text-primary mb-6">
-                The Liquidity Engineering
+              <h2 className="text-2xl lg:text-4xl font-bold text-white mb-6">
+                24-Month Capital Algorithm - Phase 2 & 3
               </h2>
-              <p className="text-xl text-muted-foreground">
+              <p className="text-xl text-gray-300">
                 Your 24-month horizon isn't a lock-in - it's a strategic advantage:
               </p>
             </div>
@@ -214,7 +214,7 @@ const Architecture = () => {
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 1 (0-18 Months)</h3>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 2 (0-18 Months)</h3>
                     <p className="text-base lg:text-lg text-gray-300 mb-6">Capital Deployment & High-Conviction Allocation</p>
                     
                     <ul className="space-y-4 text-gray-300">
@@ -234,7 +234,7 @@ const Architecture = () => {
                   </div>
                   
                   <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
-                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 1 Metrics</h4>
+                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 2 Metrics</h4>
                     <div className="grid grid-cols-2 gap-4 mb-6">
                       <div className="text-center p-3 bg-emerald/10 rounded-lg">
                         <div className="text-lg font-bold text-emerald">15%</div>
@@ -258,15 +258,15 @@ const Architecture = () => {
                   <div>
                     <div className="flex items-center gap-3 mb-6">
                       <div className="p-3 bg-emerald/10 rounded-lg">
-                        <div className="w-6 h-6 bg-gold rounded-full animate-pulse"></div>
+                        <div className="w-6 h-6 bg-emerald rounded-full animate-pulse"></div>
                       </div>
                       <div className="live-indicator text-sm">
                         <Activity className="w-3 h-3" />
-                        Phase 2 Ready
+                        Phase 3 Ready
                       </div>
                     </div>
                     
-                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 2 (19-24 Months)</h3>
+                    <h3 className="text-2xl lg:text-3xl font-bold text-emerald mb-4">Phase 3 (19-24 Months)</h3>
                     <p className="text-base lg:text-lg text-gray-300 mb-6">Liquidity Preparation & Exit Optimization</p>
                     
                     <ul className="space-y-4 text-gray-300 mb-6">
@@ -296,20 +296,20 @@ const Architecture = () => {
                     </div>
                   </div>
                   
-                  <div className="bg-gradient-to-br from-gold/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
-                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 2 Metrics</h4>
+                  <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
+                    <h4 className="text-lg lg:text-xl font-semibold text-white mb-4">Phase 3 Metrics</h4>
                     <div className="grid grid-cols-2 gap-4 mb-6">
-                      <div className="text-center p-3 bg-gold/10 rounded-lg">
-                        <div className="text-lg font-bold text-gold">72%</div>
+                      <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                        <div className="text-lg font-bold text-emerald">72%</div>
                         <div className="text-xs text-gray-400">Renew Rate</div>
                       </div>
-                      <div className="text-center p-3 bg-gold/10 rounded-lg">
-                        <div className="text-lg font-bold text-gold">6M</div>
+                      <div className="text-center p-3 bg-emerald/10 rounded-lg">
+                        <div className="text-lg font-bold text-emerald">6M</div>
                         <div className="text-xs text-gray-400">Duration</div>
                       </div>
                     </div>
-                    <div className="p-4 bg-gold/5 rounded-lg">
-                      <p className="text-gold font-medium text-sm">Liquidity optimization with flexible exit strategies</p>
+                    <div className="p-4 bg-emerald/5 rounded-lg">
+                      <p className="text-emerald font-medium text-sm">Liquidity optimization with flexible exit strategies</p>
                     </div>
                   </div>
                 </div>
