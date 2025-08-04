@@ -10,6 +10,8 @@ import NotFound from "./pages/NotFound";
 import Tiers from "./pages/Tiers";
 import Architecture from "./pages/Architecture";
 import Access from "./pages/Access";
+import Auth from "./pages/Auth";
+import Dashboard from "./pages/Dashboard";
 import Research from "./pages/Research";
 import Insights from "./pages/Insights";
 import Documentation from "./pages/Documentation";
@@ -32,6 +34,8 @@ const App = () => (
           <Route path="/tiers" element={<Tiers />} />
           <Route path="/architecture" element={<Architecture />} />
           <Route path="/access" element={<Access />} />
+          <Route path="/auth" element={<Auth />} />
+          <Route path="/dashboard" element={<Dashboard />} />
           <Route path="/research" element={<Research />} />
           <Route path="/insights" element={<Insights />} />
           <Route path="/documentation" element={<Documentation />} />

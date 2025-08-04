@@ -376,6 +376,24 @@ const Index = () => {
         </div>
       </section>
 
+      {/* Auth CTA Section */}
+      <section className="py-16 bg-primary/5">
+        <div className="max-w-4xl mx-auto px-6 text-center">
+          <h2 className="text-2xl font-bold mb-4 text-white">
+            Already a Member?
+          </h2>
+          <p className="text-gray-400 mb-6">
+            Access your personalized wealth dashboard
+          </p>
+          <a 
+            href="/auth" 
+            className="inline-flex items-center gap-2 bg-emerald text-black px-6 py-3 rounded-lg hover:bg-emerald/90 transition-colors font-semibold"
+          >
+            Sign In to Dashboard →
+          </a>
+        </div>
+      </section>
+
       <Footer />
     </div>
   );
