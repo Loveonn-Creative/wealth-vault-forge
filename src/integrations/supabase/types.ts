@@ -14,7 +14,188 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      access_submissions: {
+        Row: {
+          created_at: string
+          email: string
+          full_name: string
+          gate_status: number | null
+          id: string
+          intent: string
+          investment_amount: number
+          payment_completed: boolean | null
+          phone: string | null
+          updated_at: string
+          user_id: string | null
+          verification_completed: boolean | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          full_name: string
+          gate_status?: number | null
+          id?: string
+          intent: string
+          investment_amount: number
+          payment_completed?: boolean | null
+          phone?: string | null
+          updated_at?: string
+          user_id?: string | null
+          verification_completed?: boolean | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          full_name?: string
+          gate_status?: number | null
+          id?: string
+          intent?: string
+          investment_amount?: number
+          payment_completed?: boolean | null
+          phone?: string | null
+          updated_at?: string
+          user_id?: string | null
+          verification_completed?: boolean | null
+        }
+        Relationships: []
+      }
+      payments: {
+        Row: {
+          access_submission_id: string | null
+          amount: number
+          created_at: string
+          id: string
+          payment_method: string | null
+          status: string | null
+          transaction_id: string | null
+          user_id: string | null
+        }
+        Insert: {
+          access_submission_id?: string | null
+          amount: number
+          created_at?: string
+          id?: string
+          payment_method?: string | null
+          status?: string | null
+          transaction_id?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          access_submission_id?: string | null
+          amount?: number
+          created_at?: string
+          id?: string
+          payment_method?: string | null
+          status?: string | null
+          transaction_id?: string | null
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "payments_access_submission_id_fkey"
+            columns: ["access_submission_id"]
+            isOneToOne: false
+            referencedRelation: "access_submissions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      profiles: {
+        Row: {
+          client_id: string | null
+          created_at: string
+          full_name: string | null
+          id: string
+          intent: string | null
+          investment_amount: number | null
+          phone: string | null
+          tier_placement: string | null
+          updated_at: string
+          user_id: string
+          verification_status: string | null
+        }
+        Insert: {
+          client_id?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          intent?: string | null
+          investment_amount?: number | null
+          phone?: string | null
+          tier_placement?: string | null
+          updated_at?: string
+          user_id: string
+          verification_status?: string | null
+        }
+        Update: {
+          client_id?: string | null
+          created_at?: string
+          full_name?: string | null
+          id?: string
+          intent?: string | null
+          investment_amount?: number | null
+          phone?: string | null
+          tier_placement?: string | null
+          updated_at?: string
+          user_id?: string
+          verification_status?: string | null
+        }
+        Relationships: []
+      }
+      quiz_responses: {
+        Row: {
+          answer: string
+          created_at: string
+          id: string
+          question: string
+          quiz_type: string | null
+          user_id: string
+        }
+        Insert: {
+          answer: string
+          created_at?: string
+          id?: string
+          question: string
+          quiz_type?: string | null
+          user_id: string
+        }
+        Update: {
+          answer?: string
+          created_at?: string
+          id?: string
+          question?: string
+          quiz_type?: string | null
+          user_id?: string
+        }
+        Relationships: []
+      }
+      research_requests: {
+        Row: {
+          created_at: string
+          email: string
+          id: string
+          intent: string
+          name: string
+          phone: string | null
+        }
+        Insert: {
+          created_at?: string
+          email: string
+          id?: string
+          intent: string
+          name: string
+          phone?: string | null
+        }
+        Update: {
+          created_at?: string
+          email?: string
+          id?: string
+          intent?: string
+          name?: string
+          phone?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
