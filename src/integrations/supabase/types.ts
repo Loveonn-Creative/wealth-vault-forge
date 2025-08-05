@@ -520,7 +520,26 @@ export type Database = {
       [_ in never]: never
     }
     Functions: {
-      [_ in never]: never
+      create_wealth_simulation: {
+        Args: { user_uuid?: string; simulation_input?: Json }
+        Returns: string
+      }
+      generate_ai_portfolio_recommendation: {
+        Args: {
+          investment_amount: number
+          risk_tolerance?: string
+          investment_objectives?: string
+        }
+        Returns: Json
+      }
+      get_current_user_profile: {
+        Args: { user_uuid?: string }
+        Returns: Json
+      }
+      update_access_submission: {
+        Args: { submission_id: string; updates: Json }
+        Returns: boolean
+      }
     }
     Enums: {
       [_ in never]: never
