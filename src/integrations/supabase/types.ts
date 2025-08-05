@@ -14,6 +14,69 @@ export type Database = {
   }
   public: {
     Tables: {
+      access_protocol_submissions: {
+        Row: {
+          ai_recommendation: Json | null
+          created_at: string
+          email: string
+          encrypted_data: Json | null
+          experience_level: string | null
+          full_name: string
+          gate_completed: number | null
+          id: string
+          investment_amount: number
+          investment_intent: string
+          objectives: string | null
+          phone: string | null
+          portfolio_mirror_generated: boolean | null
+          risk_tolerance: string | null
+          submission_status: string | null
+          updated_at: string
+          user_id: string | null
+          verification_completed: boolean | null
+        }
+        Insert: {
+          ai_recommendation?: Json | null
+          created_at?: string
+          email: string
+          encrypted_data?: Json | null
+          experience_level?: string | null
+          full_name: string
+          gate_completed?: number | null
+          id?: string
+          investment_amount: number
+          investment_intent: string
+          objectives?: string | null
+          phone?: string | null
+          portfolio_mirror_generated?: boolean | null
+          risk_tolerance?: string | null
+          submission_status?: string | null
+          updated_at?: string
+          user_id?: string | null
+          verification_completed?: boolean | null
+        }
+        Update: {
+          ai_recommendation?: Json | null
+          created_at?: string
+          email?: string
+          encrypted_data?: Json | null
+          experience_level?: string | null
+          full_name?: string
+          gate_completed?: number | null
+          id?: string
+          investment_amount?: number
+          investment_intent?: string
+          objectives?: string | null
+          phone?: string | null
+          portfolio_mirror_generated?: boolean | null
+          risk_tolerance?: string | null
+          submission_status?: string | null
+          updated_at?: string
+          user_id?: string | null
+          verification_completed?: boolean | null
+        }
+        Relationships: []
+      }
       access_submissions: {
         Row: {
           created_at: string
@@ -59,6 +122,98 @@ export type Database = {
         }
         Relationships: []
       }
+      notifications: {
+        Row: {
+          created_at: string
+          id: string
+          is_read: boolean | null
+          message: string
+          metadata: Json | null
+          notification_type: string
+          title: string
+          user_id: string | null
+        }
+        Insert: {
+          created_at?: string
+          id?: string
+          is_read?: boolean | null
+          message: string
+          metadata?: Json | null
+          notification_type: string
+          title: string
+          user_id?: string | null
+        }
+        Update: {
+          created_at?: string
+          id?: string
+          is_read?: boolean | null
+          message?: string
+          metadata?: Json | null
+          notification_type?: string
+          title?: string
+          user_id?: string | null
+        }
+        Relationships: []
+      }
+      payment_records: {
+        Row: {
+          access_submission_id: string | null
+          amount: number
+          created_at: string
+          currency: string | null
+          id: string
+          payment_method: string
+          payment_reference: string | null
+          payment_status: string | null
+          updated_at: string
+          user_id: string | null
+          verification_notes: string | null
+          verification_screenshot: string | null
+          verified_at: string | null
+          verified_by: string | null
+        }
+        Insert: {
+          access_submission_id?: string | null
+          amount: number
+          created_at?: string
+          currency?: string | null
+          id?: string
+          payment_method: string
+          payment_reference?: string | null
+          payment_status?: string | null
+          updated_at?: string
+          user_id?: string | null
+          verification_notes?: string | null
+          verification_screenshot?: string | null
+          verified_at?: string | null
+          verified_by?: string | null
+        }
+        Update: {
+          access_submission_id?: string | null
+          amount?: number
+          created_at?: string
+          currency?: string | null
+          id?: string
+          payment_method?: string
+          payment_reference?: string | null
+          payment_status?: string | null
+          updated_at?: string
+          user_id?: string | null
+          verification_notes?: string | null
+          verification_screenshot?: string | null
+          verified_at?: string | null
+          verified_by?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "payment_records_access_submission_id_fkey"
+            columns: ["access_submission_id"]
+            isOneToOne: false
+            referencedRelation: "access_protocol_submissions"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
       payments: {
         Row: {
           access_submission_id: string | null
@@ -102,40 +257,73 @@ export type Database = {
       }
       profiles: {
         Row: {
+          account_locked_until: string | null
+          ai_personalization: Json | null
           client_id: string | null
           created_at: string
+          document_verification_status: string | null
+          failed_login_attempts: number | null
           full_name: string | null
           id: string
           intent: string | null
           investment_amount: number | null
+          investment_tier: string | null
+          kyc_status: string | null
+          last_login: string | null
+          onboarding_completed: boolean | null
           phone: string | null
+          preferred_contact_method: string | null
+          risk_profile: Json | null
           tier_placement: string | null
+          two_factor_enabled: boolean | null
           updated_at: string
           user_id: string
           verification_status: string | null
         }
         Insert: {
+          account_locked_until?: string | null
+          ai_personalization?: Json | null
           client_id?: string | null
           created_at?: string
+          document_verification_status?: string | null
+          failed_login_attempts?: number | null
           full_name?: string | null
           id?: string
           intent?: string | null
           investment_amount?: number | null
+          investment_tier?: string | null
+          kyc_status?: string | null
+          last_login?: string | null
+          onboarding_completed?: boolean | null
           phone?: string | null
+          preferred_contact_method?: string | null
+          risk_profile?: Json | null
           tier_placement?: string | null
+          two_factor_enabled?: boolean | null
           updated_at?: string
           user_id: string
           verification_status?: string | null
         }
         Update: {
+          account_locked_until?: string | null
+          ai_personalization?: Json | null
           client_id?: string | null
           created_at?: string
+          document_verification_status?: string | null
+          failed_login_attempts?: number | null
           full_name?: string | null
           id?: string
           intent?: string | null
           investment_amount?: number | null
+          investment_tier?: string | null
+          kyc_status?: string | null
+          last_login?: string | null
+          onboarding_completed?: boolean | null
           phone?: string | null
+          preferred_contact_method?: string | null
+          risk_profile?: Json | null
           tier_placement?: string | null
+          two_factor_enabled?: boolean | null
           updated_at?: string
           user_id?: string
           verification_status?: string | null
@@ -193,6 +381,137 @@ export type Database = {
           intent?: string
           name?: string
           phone?: string | null
+        }
+        Relationships: []
+      }
+      user_block_assignments: {
+        Row: {
+          assignment_date: string | null
+          assignment_status: string | null
+          block_id: string | null
+          created_at: string
+          id: string
+          investment_amount: number
+          performance_tracking: Json | null
+          user_id: string | null
+        }
+        Insert: {
+          assignment_date?: string | null
+          assignment_status?: string | null
+          block_id?: string | null
+          created_at?: string
+          id?: string
+          investment_amount: number
+          performance_tracking?: Json | null
+          user_id?: string | null
+        }
+        Update: {
+          assignment_date?: string | null
+          assignment_status?: string | null
+          block_id?: string | null
+          created_at?: string
+          id?: string
+          investment_amount?: number
+          performance_tracking?: Json | null
+          user_id?: string | null
+        }
+        Relationships: [
+          {
+            foreignKeyName: "user_block_assignments_block_id_fkey"
+            columns: ["block_id"]
+            isOneToOne: false
+            referencedRelation: "wealth_blocks"
+            referencedColumns: ["id"]
+          },
+        ]
+      }
+      wealth_blocks: {
+        Row: {
+          block_code: string
+          block_name: string
+          block_status: string | null
+          closure_date: string | null
+          created_at: string
+          current_capacity: number | null
+          description: string | null
+          id: string
+          launch_date: string | null
+          max_capacity: number | null
+          minimum_investment: number | null
+          performance_data: Json | null
+          risk_level: string | null
+          roi_range: string | null
+          updated_at: string
+        }
+        Insert: {
+          block_code: string
+          block_name: string
+          block_status?: string | null
+          closure_date?: string | null
+          created_at?: string
+          current_capacity?: number | null
+          description?: string | null
+          id?: string
+          launch_date?: string | null
+          max_capacity?: number | null
+          minimum_investment?: number | null
+          performance_data?: Json | null
+          risk_level?: string | null
+          roi_range?: string | null
+          updated_at?: string
+        }
+        Update: {
+          block_code?: string
+          block_name?: string
+          block_status?: string | null
+          closure_date?: string | null
+          created_at?: string
+          current_capacity?: number | null
+          description?: string | null
+          id?: string
+          launch_date?: string | null
+          max_capacity?: number | null
+          minimum_investment?: number | null
+          performance_data?: Json | null
+          risk_level?: string | null
+          roi_range?: string | null
+          updated_at?: string
+        }
+        Relationships: []
+      }
+      wealth_simulations: {
+        Row: {
+          ai_output: Json
+          allocation_strategy: Json | null
+          created_at: string
+          id: string
+          input_data: Json
+          projected_returns: Json | null
+          risk_assessment: Json | null
+          simulation_type: string | null
+          user_id: string | null
+        }
+        Insert: {
+          ai_output: Json
+          allocation_strategy?: Json | null
+          created_at?: string
+          id?: string
+          input_data: Json
+          projected_returns?: Json | null
+          risk_assessment?: Json | null
+          simulation_type?: string | null
+          user_id?: string | null
+        }
+        Update: {
+          ai_output?: Json
+          allocation_strategy?: Json | null
+          created_at?: string
+          id?: string
+          input_data?: Json
+          projected_returns?: Json | null
+          risk_assessment?: Json | null
+          simulation_type?: string | null
+          user_id?: string | null
         }
         Relationships: []
       }
