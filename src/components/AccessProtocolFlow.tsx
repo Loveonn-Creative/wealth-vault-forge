@@ -99,7 +99,7 @@ const AccessProtocolFlow = () => {
           setSubmissionId(existingSubmission.id);
           
           if (existingSubmission.ai_recommendation) {
-            setAiRecommendation(existingSubmission.ai_recommendation);
+            setAiRecommendation(existingSubmission.ai_recommendation as unknown as AIRecommendation);
           }
         }
       }
@@ -388,7 +388,7 @@ const AccessProtocolFlow = () => {
                     <SelectValue placeholder="Select your investment experience level" />
                   </SelectTrigger>
                   <SelectContent>
-                    <SelectItem value="beginner">Beginner (< 2 years)</SelectItem>
+                    <SelectItem value="beginner">Beginner (&lt; 2 years)</SelectItem>
                     <SelectItem value="intermediate">Intermediate (2-5 years)</SelectItem>
                     <SelectItem value="advanced">Advanced (5-10 years)</SelectItem>
                     <SelectItem value="expert">Expert (10+ years)</SelectItem>
