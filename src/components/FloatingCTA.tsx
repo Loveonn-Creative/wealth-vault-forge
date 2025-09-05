@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
 import { Zap, X } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const FloatingCTA = () => {
   const [isVisible, setIsVisible] = useState(false);
@@ -38,14 +39,14 @@ const FloatingCTA = () => {
         </button>
         
         {/* CTA Button */}
-        <a
-          href="/access"
+        <Link
+          to="/access"
           className="group flex items-center gap-3 bg-emerald hover:bg-emerald/90 text-black px-6 py-4 rounded-xl shadow-emerald/50 shadow-2xl transition-all duration-300 hover:scale-105 font-bold"
         >
           <div className="w-3 h-3 bg-black rounded-full animate-pulse"></div>
           <span>Apply Now</span>
           <Zap size={20} />
-        </a>
+        </Link>
         
         {/* Pulse effect */}
         <div className="absolute inset-0 bg-emerald rounded-xl animate-ping opacity-20 -z-10"></div>

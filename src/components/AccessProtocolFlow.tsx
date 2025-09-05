@@ -10,6 +10,7 @@ import { Progress } from '@/components/ui/progress';
 import { useToast } from '@/hooks/use-toast';
 import { supabase } from '@/integrations/supabase/client';
 import { Eye, Shield, Lock, CheckCircle, TrendingUp, Target, Brain, Sparkles } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
 
 interface AccessSubmission {
   full_name: string;
@@ -61,6 +62,7 @@ const AccessProtocolFlow = () => {
   const [submissionId, setSubmissionId] = useState<string | null>(null);
   
   const { toast } = useToast();
+  const navigate = useNavigate();
 
   // Load user data on mount
   useEffect(() => {
@@ -171,8 +173,13 @@ const AccessProtocolFlow = () => {
           setIsSubmitted(true);
           toast({
             title: "Access Protocol Complete",
-            description: "Your application has been submitted for review.",
+            description: "Redirecting to your dashboard...",
           });
+          
+          // Redirect to dashboard after a brief delay
+          setTimeout(() => {
+            navigate('/dashboard');
+          }, 2000);
         }
       }
 

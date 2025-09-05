@@ -1,5 +1,6 @@
 import { useEffect } from 'react';
 import { Activity, TrendingUp, Shield, Zap, BarChart3, Brain } from 'lucide-react';
+import { Link } from 'react-router-dom';
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
 
@@ -33,20 +34,20 @@ const Index = () => {
         {/* Hero Section - 100x Better Impact */}
         <section className="relative min-h-screen flex items-center justify-center bg-black overflow-hidden">
           {/* AI Data Flow Background */}
-          <div className="absolute inset-0 opacity-[0.12]">
+          <div className="absolute inset-0 opacity-[0.12] pointer-events-none">
             <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald blur-3xl animate-pulse"></div>
             <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-gold blur-3xl animate-pulse"></div>
             <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-6 h-6 bg-emerald rounded-full animate-ping"></div>
           </div>
 
           {/* Live ROI Data Streams */}
-          <div className="absolute inset-0 overflow-hidden">
+          <div className="absolute inset-0 overflow-hidden pointer-events-none">
             <div className="absolute top-1/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-emerald/40 to-transparent animate-pulse"></div>
             <div className="absolute top-2/3 left-0 w-full h-px bg-gradient-to-r from-transparent via-gold/30 to-transparent animate-pulse" style={{ animationDelay: '1s' }}></div>
             <div className="absolute bottom-1/3 right-0 w-full h-px bg-gradient-to-l from-transparent via-emerald/20 to-transparent animate-pulse" style={{ animationDelay: '2s' }}></div>
           </div>
 
-          <div className="relative max-w-6xl mx-auto px-4 lg:px-8 text-center">
+          <div className="relative z-10 max-w-6xl mx-auto px-4 lg:px-8 text-center">
             {/* Real-Time Status - Maximum Impact */}
             <div className="reveal-fade mb-8 lg:mb-12">
                <div className="inline-flex items-center gap-3 px-4 py-3 lg:px-6 lg:py-3 bg-emerald/20 border border-emerald/40 rounded-full text-emerald text-sm lg:text-base font-bold backdrop-blur-md shadow-lg">
@@ -86,21 +87,21 @@ const Index = () => {
             {/* Dual CTA */}
             <div className="reveal-up reveal-stagger-3 pt-6 lg:pt-8">
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-8 mb-6 lg:mb-8">
-                <a 
-                  href="/access"
+                <Link 
+                  to="/access"
                   className="w-full sm:w-auto group px-8 lg:px-12 py-4 lg:py-6 bg-emerald text-black rounded-xl hover:bg-emerald/90 transition-all duration-300 wealth-hover font-black text-lg lg:text-xl shadow-emerald/50 shadow-2xl"
                 >
                   <span className="flex items-center justify-center gap-3">
                     <Zap className="w-5 h-5 lg:w-6 lg:h-6" />
                     START WITH ₹15K
                   </span>
-                </a>
-                <a 
-                  href="/portfolio"
+                </Link>
+                <Link 
+                  to="/portfolio"
                   className="w-full sm:w-auto px-8 lg:px-12 py-4 lg:py-6 border-2 border-emerald/50 text-emerald rounded-xl hover:bg-emerald/10 transition-all duration-300 font-semibold text-lg lg:text-xl"
                 >
                   EXPLORE PORTFOLIO CASES
-                </a>
+                </Link>
               </div>
               
               <div className="text-xs lg:text-sm text-gray-400 text-center max-w-md mx-auto">
@@ -239,9 +240,9 @@ const Index = () => {
                   
                   {/* Hover CTA */}
                   <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="/tiers" className="text-xs text-emerald hover:text-emerald-light font-medium">
+                    <Link to="/tiers" className="text-xs text-emerald hover:text-emerald-light font-medium">
                       See past performance →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               ))}
@@ -249,13 +250,13 @@ const Index = () => {
 
             {/* Mobile CTA */}
             <div className="text-center mt-8 lg:mt-12">
-              <a 
-                href="/tiers"
+              <Link 
+                to="/tiers"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-emerald/10 border border-emerald/30 rounded-lg text-emerald hover:bg-emerald/20 transition-all duration-300 text-sm font-medium"
               >
                 Compare all tiers
                 <TrendingUp className="w-4 h-4" />
-              </a>
+              </Link>
             </div>
           </div>
         </section>

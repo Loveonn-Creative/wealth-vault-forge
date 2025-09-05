@@ -6,7 +6,7 @@ import { Label } from '@/components/ui/label';
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from '@/components/ui/card';
 import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs';
 import { useToast } from '@/hooks/use-toast';
-import { Shield, Zap, TrendingUp } from 'lucide-react';
+import { Shield, Zap, TrendingUp, Eye, EyeOff } from 'lucide-react';
 import { useNavigate } from 'react-router-dom';
 
 const Auth = () => {
@@ -14,8 +14,9 @@ const Auth = () => {
   const [password, setPassword] = useState('');
   const [fullName, setFullName] = useState('');
   const [loading, setLoading] = useState(false);
-  const [otpSent, setOtpSent] = useState(false);
-  const [otp, setOtp] = useState('');
+  const [showPassword, setShowPassword] = useState(false);
+  const [showResetPassword, setShowResetPassword] = useState(false);
+  const [resetEmailSent, setResetEmailSent] = useState(false);
   const { toast } = useToast();
   const navigate = useNavigate();
 
@@ -58,10 +59,9 @@ const Auth = () => {
 
       if (error) throw error;
 
-      setOtpSent(true);
       toast({
-        title: "Verification sent",
-        description: "Check your email for the verification code.",
+        title: "Account created successfully",
+        description: "Please click the verification link in your email to complete setup.",
       });
     } catch (error: any) {
       toast({
@@ -102,26 +102,22 @@ const Auth = () => {
     }
   };
 
-  const handleOtpVerification = async (e: React.FormEvent) => {
+  const handleForgotPassword = async (e: React.FormEvent) => {
     e.preventDefault();
     setLoading(true);
 
     try {
-      const { data, error } = await supabase.auth.verifyOtp({
-        email,
-        token: otp,
-        type: 'signup'
+      const { error } = await supabase.auth.resetPasswordForEmail(email, {
+        redirectTo: `${window.location.origin}/auth`,
       });
 
       if (error) throw error;
 
-      if (data.user) {
-        toast({
-          title: "Welcome to Wealth Blocks",
-          description: "Your account has been verified successfully.",
-        });
-        window.location.href = '/access';
-      }
+      setResetEmailSent(true);
+      toast({
+        title: "Password reset email sent",
+        description: "Check your email for instructions to reset your password.",
+      });
     } catch (error: any) {
       toast({
         title: "Error",
@@ -133,7 +129,35 @@ const Auth = () => {
     }
   };
 
-  if (otpSent) {
+  const handleResendVerification = async () => {
+    setLoading(true);
+    try {
+      const { error } = await supabase.auth.resend({
+        type: 'signup',
+        email: email,
+        options: {
+          emailRedirectTo: `${window.location.origin}/dashboard`
+        }
+      });
+
+      if (error) throw error;
+
+      toast({
+        title: "Verification email resent",
+        description: "Check your email for the new verification link.",
+      });
+    } catch (error: any) {
+      toast({
+        title: "Error",
+        description: error.message,
+        variant: "destructive",
+      });
+    } finally {
+      setLoading(false);
+    }
+  };
+
+  if (showResetPassword) {
     return (
       <div className="min-h-screen bg-gradient-to-br from-background via-background to-primary/5 flex items-center justify-center p-4">
         <Card className="w-full max-w-md">
@@ -141,29 +165,54 @@ const Auth = () => {
             <div className="mx-auto w-12 h-12 bg-primary/10 rounded-full flex items-center justify-center mb-4">
               <Shield className="w-6 h-6 text-primary" />
             </div>
-            <CardTitle>Verify Your Email</CardTitle>
+            <CardTitle>Reset Password</CardTitle>
             <CardDescription>
-              Enter the verification code sent to {email}
+              {resetEmailSent ? "Check your email for reset instructions" : "Enter your email to reset password"}
             </CardDescription>
           </CardHeader>
           <CardContent>
-            <form onSubmit={handleOtpVerification} className="space-y-4">
-              <div>
-                <Label htmlFor="otp">Verification Code</Label>
-                <Input
-                  id="otp"
-                  type="text"
-                  placeholder="Enter 6-digit code"
-                  value={otp}
-                  onChange={(e) => setOtp(e.target.value)}
-                  required
-                  maxLength={6}
-                />
+            {!resetEmailSent ? (
+              <form onSubmit={handleForgotPassword} className="space-y-4">
+                <div>
+                  <Label htmlFor="reset-email">Email Address</Label>
+                  <Input
+                    id="reset-email"
+                    type="email"
+                    placeholder="your@email.com"
+                    value={email}
+                    onChange={(e) => setEmail(e.target.value)}
+                    required
+                  />
+                </div>
+                <Button type="submit" className="w-full" disabled={loading}>
+                  {loading ? "Sending..." : "Send Reset Link"}
+                </Button>
+                <Button 
+                  type="button" 
+                  variant="ghost" 
+                  className="w-full" 
+                  onClick={() => setShowResetPassword(false)}
+                >
+                  Back to Sign In
+                </Button>
+              </form>
+            ) : (
+              <div className="space-y-4">
+                <p className="text-sm text-muted-foreground text-center">
+                  We've sent password reset instructions to {email}
+                </p>
+                <Button 
+                  variant="ghost" 
+                  className="w-full" 
+                  onClick={() => {
+                    setShowResetPassword(false);
+                    setResetEmailSent(false);
+                  }}
+                >
+                  Back to Sign In
+                </Button>
               </div>
-              <Button type="submit" className="w-full" disabled={loading}>
-                {loading ? "Verifying..." : "Verify & Continue"}
-              </Button>
-            </form>
+            )}
           </CardContent>
         </Card>
       </div>
@@ -247,17 +296,36 @@ const Auth = () => {
                   </div>
                   <div>
                     <Label htmlFor="signin-password">Password</Label>
-                    <Input
-                      id="signin-password"
-                      type="password"
-                      placeholder="••••••••"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      required
-                    />
+                    <div className="relative">
+                      <Input
+                        id="signin-password"
+                        type={showPassword ? "text" : "password"}
+                        placeholder="••••••••"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                      />
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+                        onClick={() => setShowPassword(!showPassword)}
+                      >
+                        {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                      </Button>
+                    </div>
                   </div>
                   <Button type="submit" className="w-full" disabled={loading}>
                     {loading ? "Signing in..." : "Access Dashboard"}
+                  </Button>
+                  <Button 
+                    type="button" 
+                    variant="ghost" 
+                    className="w-full text-sm" 
+                    onClick={() => setShowResetPassword(true)}
+                  >
+                    Forgot Password?
                   </Button>
                 </form>
               </TabsContent>
@@ -288,19 +356,33 @@ const Auth = () => {
                   </div>
                   <div>
                     <Label htmlFor="signup-password">Password</Label>
-                    <Input
-                      id="signup-password"
-                      type="password"
-                      placeholder="••••••••"
-                      value={password}
-                      onChange={(e) => setPassword(e.target.value)}
-                      required
-                      minLength={6}
-                    />
+                    <div className="relative">
+                      <Input
+                        id="signup-password"
+                        type={showPassword ? "text" : "password"}
+                        placeholder="••••••••"
+                        value={password}
+                        onChange={(e) => setPassword(e.target.value)}
+                        required
+                        minLength={6}
+                      />
+                      <Button
+                        type="button"
+                        variant="ghost"
+                        size="sm"
+                        className="absolute right-0 top-0 h-full px-3 py-2 hover:bg-transparent"
+                        onClick={() => setShowPassword(!showPassword)}
+                      >
+                        {showPassword ? <EyeOff className="h-4 w-4" /> : <Eye className="h-4 w-4" />}
+                      </Button>
+                    </div>
                   </div>
                   <Button type="submit" className="w-full" disabled={loading}>
-                    {loading ? "Creating account..." : "Start Verification"}
+                    {loading ? "Creating account..." : "Create Account"}
                   </Button>
+                  <p className="text-xs text-muted-foreground text-center mt-2">
+                    You'll receive an email verification link to complete setup
+                  </p>
                 </form>
               </TabsContent>
             </Tabs>
