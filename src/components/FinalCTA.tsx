@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 const FinalCTA = () => {
   return (
     <section className="py-32 bg-primary text-primary-foreground">
@@ -13,12 +14,12 @@ const FinalCTA = () => {
           </p>
           
           <div className="flex justify-center">
-            <a 
-              href="#access" 
+            <Link 
+              to="/access"
               className="inline-flex items-center gap-2 bg-primary-foreground text-primary px-8 py-4 rounded-lg hover:bg-primary-foreground/90 transition-all duration-300 hover:scale-105 text-lg font-semibold"
             >
               Apply for Access →
-            </a>
+            </Link>
           </div>
           
           <p className="text-sm text-primary-foreground/60 mt-6">

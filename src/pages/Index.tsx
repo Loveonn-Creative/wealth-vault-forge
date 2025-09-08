@@ -367,13 +367,13 @@ const Index = () => {
             ))}
           </div>
           
-          <a 
-            href="/access"
+          <Link 
+            to="/access"
             className="inline-flex items-center gap-2 px-8 py-4 bg-emerald text-black rounded-lg hover:bg-emerald/90 transition-all duration-500 wealth-hover font-semibold"
           >
             <Zap className="w-5 h-5" />
             Start Your Verification
-          </a>
+          </Link>
         </div>
       </section>
 
@@ -386,12 +386,12 @@ const Index = () => {
           <p className="text-gray-400 mb-6">
             Access your personalized wealth dashboard
           </p>
-          <a 
-            href="/auth" 
+          <Link 
+            to="/auth" 
             className="inline-flex items-center gap-2 bg-emerald text-black px-6 py-3 rounded-lg hover:bg-emerald/90 transition-colors font-semibold"
           >
             Sign In to Dashboard →
-          </a>
+          </Link>
         </div>
       </section>
 
