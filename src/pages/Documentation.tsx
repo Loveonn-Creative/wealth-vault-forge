@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 import { FileText, Shield, Users, Lock, AlertCircle, CheckCircle } from 'lucide-react';
 
 const Documentation = () => {
@@ -161,12 +162,12 @@ const Documentation = () => {
                     </div>
                   </div>
                   
-                  <a 
-                    href="/access"
+                  <Link 
+                    to="/access"
                     className="inline-flex items-center gap-2 text-emerald hover:text-emerald/80 transition-colors"
                   >
                     Begin Verification Process →
-                  </a>
+                  </Link>
                 </div>
               </div>
 
@@ -208,12 +209,12 @@ const Documentation = () => {
                     </div>
                   </div>
                   
-                  <a 
-                    href="/tiers"
+                  <Link 
+                    to="/tiers"
                     className="inline-flex items-center gap-2 text-emerald hover:text-emerald/80 transition-colors"
                   >
                     View Tier Details →
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>

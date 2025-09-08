@@ -97,14 +97,14 @@ const Tiers = () => {
                   <div className="bg-gradient-to-br from-emerald/5 to-gray-800/50 p-6 lg:p-8 rounded-lg">
                     <h3 className="text-lg lg:text-xl font-semibold text-white mb-4">Trust-Building CTAs</h3>
                     <div className="space-y-4">
-                      <a href="/portfolio" className="block p-3 bg-emerald/10 rounded-lg hover:bg-emerald/20 transition-all">
+                      <Link to="/portfolio" className="block p-3 bg-emerald/10 rounded-lg hover:bg-emerald/20 transition-all">
                         <div className="text-emerald font-medium text-sm">See Past Performance</div>
                         <div className="text-gray-400 text-xs mt-1">View anonymous member results</div>
-                      </a>
-                      <a href="/architecture" className="block p-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all">
+                      </Link>
+                      <Link to="/architecture" className="block p-3 bg-gray-800/50 rounded-lg hover:bg-gray-700/50 transition-all">
                         <div className="text-white font-medium text-sm">Compare with FDs</div>
                         <div className="text-gray-400 text-xs mt-1">Side-by-side analysis</div>
-                      </a>
+                      </Link>
                     </div>
                     
                     <div className="mt-6 p-4 bg-emerald/5 rounded-lg">

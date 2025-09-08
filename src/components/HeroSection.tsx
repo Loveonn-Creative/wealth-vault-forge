@@ -1,10 +1,11 @@
 import { ArrowRight } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const HeroSection = () => {
   return (
     <section className="relative min-h-screen flex items-center justify-center bg-subtle overflow-hidden">
       {/* Background Pattern */}
-      <div className="absolute inset-0 opacity-[0.03]">
+      <div className="absolute inset-0 opacity-[0.03] pointer-events-none">
         <div className="absolute top-1/4 left-1/4 w-96 h-96 rounded-full bg-emerald blur-3xl"></div>
         <div className="absolute bottom-1/4 right-1/4 w-96 h-96 rounded-full bg-steel blur-3xl"></div>
       </div>
@@ -42,14 +43,14 @@ const HeroSection = () => {
           {/* Subtle engagement */}
           <div className="reveal-up reveal-stagger-3 pt-8">
             <div className="flex flex-col sm:flex-row items-center justify-center gap-6">
-              <a 
-                href="#access"
+              <Link 
+                to="/access"
                 className="group px-8 py-4 bg-primary text-primary-foreground rounded-lg hover:bg-emerald transition-all duration-500 wealth-hover"
               >
                 <span className="flex items-center gap-2">
                   ⟶ Apply for Access (Limited Invites)
                 </span>
-              </a>
+              </Link>
             </div>
           </div>
         </div>

@@ -1,4 +1,5 @@
 import { Mail, Phone, MapPin, Shield, Lock, FileText } from 'lucide-react';
+import { Link } from 'react-router-dom';
 
 const Footer = () => {
   const currentYear = new Date().getFullYear();
@@ -27,24 +28,24 @@ const Footer = () => {
             <h3 className="font-semibold text-primary-foreground">Platform</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/tiers" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/tiers" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Investment Tiers
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/architecture" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/architecture" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   The Architecture
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/access" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/access" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Access Protocol
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/portfolio" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/portfolio" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Portfolio Management
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -54,24 +55,24 @@ const Footer = () => {
             <h3 className="font-semibold text-primary-foreground">Resources</h3>
             <ul className="space-y-2 text-sm">
               <li>
-                <a href="/research" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/research" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Market Intelligence
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/insights" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/insights" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Investment Insights
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/documentation" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/documentation" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Documentation
-                </a>
+                </Link>
               </li>
               <li>
-                <a href="/support" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
+                <Link to="/support" className="text-primary-foreground/70 hover:text-emerald-muted transition-colors">
                   Member Support
-                </a>
+                </Link>
               </li>
             </ul>
           </div>
@@ -102,14 +103,14 @@ const Footer = () => {
             <div className="flex items-center gap-6 text-xs text-primary-foreground/70">
               <span>© {currentYear} Wealth Blocks. All rights reserved.</span>
               <div className="flex items-center gap-4">
-                <a href="/privacy" className="hover:text-emerald-muted transition-colors flex items-center gap-1">
+                <Link to="/privacy" className="hover:text-emerald-muted transition-colors flex items-center gap-1">
                   <Lock size={12} />
                   Privacy Policy
-                </a>
-                <a href="/terms" className="hover:text-emerald-muted transition-colors flex items-center gap-1">
+                </Link>
+                <Link to="/terms" className="hover:text-emerald-muted transition-colors flex items-center gap-1">
                   <FileText size={12} />
                   Terms of Service
-                </a>
+                </Link>
               </div>
             </div>
             

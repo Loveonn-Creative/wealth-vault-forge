@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 import { Search, Target, TrendingUp, PieChart, FileText, Database, Eye, Lock } from 'lucide-react';
 
 const Research = () => {
@@ -313,12 +314,12 @@ const Research = () => {
                 <div className="text-sm text-emerald font-medium">847 funds under analysis</div>
               </div>
               
-              <a 
-                href="/access"
+              <Link 
+                to="/access"
                 className="inline-flex items-center gap-2 bg-emerald text-emerald-foreground px-8 py-4 rounded-lg hover:bg-emerald/90 transition-all duration-300 hover:scale-105 text-lg font-semibold"
               >
                 Request Research Access →
-              </a>
+              </Link>
             </div>
           </div>
         </section>

@@ -1,5 +1,6 @@
 import Navigation from '@/components/Navigation';
 import Footer from '@/components/Footer';
+import { Link } from 'react-router-dom';
 import { TrendingUp, Shield, BarChart3 } from 'lucide-react';
 
 const Portfolio = () => {
@@ -90,9 +91,9 @@ const Portfolio = () => {
                   
                   {/* Hover Action */}
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="/access" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
+                    <Link to="/access" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
                       Compare with other plans →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -149,9 +150,9 @@ const Portfolio = () => {
                   
                   {/* Hover Action */}
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="/access" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
+                    <Link to="/access" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
                       See past performance →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -208,9 +209,9 @@ const Portfolio = () => {
                   
                   {/* Hover Action */}
                   <div className="opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <a href="/insights" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
+                    <Link to="/insights" className="block text-center py-2 text-xs text-emerald hover:text-emerald-light">
                       Compare with other plans →
-                    </a>
+                    </Link>
                   </div>
                 </div>
               </div>
@@ -224,8 +225,8 @@ const Portfolio = () => {
                   Compare your performance against the entire Wealth Blocks ecosystem
                 </p>
                 <div className="flex justify-center items-center gap-4">
-                  <a href="/insights" className="px-4 py-2 bg-emerald/20 text-emerald rounded-lg text-sm hover:bg-emerald/30 transition-all">Personal View</a>
-                  <a href="/research" className="px-4 py-2 bg-gray-800/50 text-gray-400 rounded-lg text-sm hover:bg-gray-700/50 transition-all">Overall Portfolio</a>
+                  <Link to="/insights" className="px-4 py-2 bg-emerald/20 text-emerald rounded-lg text-sm hover:bg-emerald/30 transition-all">Personal View</Link>
+                  <Link to="/research" className="px-4 py-2 bg-gray-800/50 text-gray-400 rounded-lg text-sm hover:bg-gray-700/50 transition-all">Overall Portfolio</Link>
                 </div>
               </div>
             </div>
@@ -327,12 +328,12 @@ const Portfolio = () => {
                 <div className="text-sm text-emerald font-medium">Real-time optimization</div>
               </div>
               
-              <a 
-                href="/access"
+              <Link 
+                to="/access"
                 className="inline-flex items-center gap-2 bg-emerald text-emerald-foreground px-8 py-4 rounded-lg hover:bg-emerald/90 transition-all duration-300 hover:scale-105 text-lg font-semibold"
               >
                 Apply for Portfolio Access →
-              </a>
+              </Link>
             </div>
           </div>
         </section>
