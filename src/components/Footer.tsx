@@ -81,14 +81,22 @@ const Footer = () => {
           <div className="space-y-4">
             <h3 className="font-semibold text-primary-foreground">Contact</h3>
             <div className="space-y-3 text-sm">
-              <div className="flex items-center gap-2 text-primary-foreground/70">
+              <a 
+                href="mailto:access@wealthblocks.ai"
+                aria-label="Email us at access@wealthblocks.ai"
+                className="flex items-center gap-2 text-primary-foreground/70 hover:text-emerald-muted transition-colors"
+              >
                 <Mail size={16} />
                 <span>access@wealthblocks.ai</span>
-              </div>
-              <div className="flex items-center gap-2 text-primary-foreground/70">
+              </a>
+              <a 
+                href="tel:+919876543210"
+                aria-label="Call us at +91 98765 43210"
+                className="flex items-center gap-2 text-primary-foreground/70 hover:text-emerald-muted transition-colors"
+              >
                 <Phone size={16} />
                 <span>+91 98765 43210</span>
-              </div>
+              </a>
               <div className="flex items-start gap-2 text-primary-foreground/70">
                 <MapPin size={16} className="mt-0.5 flex-shrink-0" />
                 <span>BKC, Mumbai 400051<br />India</span>

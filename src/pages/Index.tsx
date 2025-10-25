@@ -89,6 +89,7 @@ const Index = () => {
               <div className="flex flex-col sm:flex-row items-center justify-center gap-4 lg:gap-8 mb-6 lg:mb-8">
                 <Link 
                   to="/access"
+                  aria-label="Apply for access starting at ₹15K minimum investment"
                   className="w-full sm:w-auto group px-8 lg:px-12 py-4 lg:py-6 bg-emerald text-black rounded-xl hover:bg-emerald/90 transition-all duration-300 wealth-hover font-black text-lg lg:text-xl shadow-emerald/50 shadow-2xl"
                 >
                   <span className="flex items-center justify-center gap-3">
@@ -98,6 +99,7 @@ const Index = () => {
                 </Link>
                 <Link 
                   to="/portfolio"
+                  aria-label="Explore portfolio cases and investment examples"
                   className="w-full sm:w-auto px-8 lg:px-12 py-4 lg:py-6 border-2 border-emerald/50 text-emerald rounded-xl hover:bg-emerald/10 transition-all duration-300 font-semibold text-lg lg:text-xl"
                 >
                   EXPLORE PORTFOLIO CASES
@@ -191,7 +193,12 @@ const Index = () => {
                   highlights: ["Offshore access", "Multi-block strategy", "Private onboarding"]
                 }
               ].map((tier, index) => (
-                <div key={tier.name} className="dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 transition-all duration-700 cursor-pointer">
+                <Link 
+                  key={tier.name} 
+                  to="/tiers"
+                  aria-label={`View ${tier.name} details and past performance`}
+                  className="block dashboard-tile group bg-gray-900/50 border border-emerald/20 hover:border-emerald/40 transition-all duration-700"
+                >
                   {/* Header */}
                   <div className="flex items-center justify-between mb-4">
                     <div className="flex items-center gap-3">
@@ -240,11 +247,11 @@ const Index = () => {
                   
                   {/* Hover CTA */}
                   <div className="mt-4 opacity-0 group-hover:opacity-100 transition-opacity duration-300">
-                    <Link to="/tiers" className="text-xs text-emerald hover:text-emerald-light font-medium">
+                    <span className="text-xs text-emerald hover:text-emerald-light font-medium">
                       See past performance →
-                    </Link>
+                    </span>
                   </div>
-                </div>
+                </Link>
               ))}
             </div>
 
@@ -252,6 +259,7 @@ const Index = () => {
             <div className="text-center mt-8 lg:mt-12">
               <Link 
                 to="/tiers"
+                aria-label="Compare all investment tiers"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-emerald/10 border border-emerald/30 rounded-lg text-emerald hover:bg-emerald/20 transition-all duration-300 text-sm font-medium"
               >
                 Compare all tiers
@@ -369,6 +377,7 @@ const Index = () => {
           
           <Link 
             to="/access"
+            aria-label="Start your verification process"
             className="inline-flex items-center gap-2 px-8 py-4 bg-emerald text-black rounded-lg hover:bg-emerald/90 transition-all duration-500 wealth-hover font-semibold"
           >
             <Zap className="w-5 h-5" />
@@ -387,7 +396,8 @@ const Index = () => {
             Access your personalized wealth dashboard
           </p>
           <Link 
-            to="/auth" 
+            to="/auth"
+            aria-label="Sign in to your wealth dashboard"
             className="inline-flex items-center gap-2 bg-emerald text-black px-6 py-3 rounded-lg hover:bg-emerald/90 transition-colors font-semibold"
           >
             Sign In to Dashboard →
